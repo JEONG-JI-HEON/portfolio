@@ -4,4 +4,7 @@ module.exports = defineConfig({
   lintOnSave: true,
   publicPath: "/portfolio/",
   outputDir: "docs",
+  chainWebpack: (config) => {
+    config.module.rules.delete("eslint");
+  },
 });

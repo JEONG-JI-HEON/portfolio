@@ -1,26 +1,49 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <section class="introSection">
+    <Intro />
+  </section>
+  <section class="mainSection">
+    <nav>
+      <scrollSpy />
+    </nav>
+    <div class="contents">
+      <education />
+      <profile />
+      <project />
+      <clones />
+      <contact />
+    </div>
+  </section>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Intro from "./components/intro.vue";
+import scrollSpy from "./components/scrollSpy.vue";
+import education from "./components/education.vue";
+import profile from "./components/profile.vue";
+import project from "./components/project.vue";
+import clones from "./components/clones.vue";
+import contact from "./components/contact.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Intro,
+    scrollSpy,
+    education,
+    profile,
+    project,
+    clones,
+    contact,
   },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "NEXON Lv2 Gothic";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #000;
 }
 </style>
