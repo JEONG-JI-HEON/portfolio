@@ -1,12 +1,12 @@
 <template>
-  <section class="introSection">
+  <section id="introSection">
     <Intro />
   </section>
-  <section class="mainSection">
+  <section id="mainSection">
     <nav>
       <scrollSpy />
     </nav>
-    <div class="contents">
+    <div id="contents">
       <education />
       <profile />
       <project />
@@ -41,9 +41,14 @@ export default {
 
 <style>
 #app {
-  font-family: "NEXON Lv2 Gothic";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000;
+}
+
+#introSection {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
 }
 </style>
