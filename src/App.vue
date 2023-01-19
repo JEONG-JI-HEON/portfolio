@@ -49,6 +49,15 @@ export default {
 #introSection {
   width: 100%;
   height: 100vh;
-  background-color: aqua;
+  background-color: #202224;
+  position: relative;
+}
+
+#mainSection {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 </style>

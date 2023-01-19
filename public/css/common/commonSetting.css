@@ -7,11 +7,33 @@ a {
   text-decoration: none;
 }
 
-p{
+p {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-.yellowPoint {
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.purplePoint {
   color: #8977ad;
+}
+
+.coloringText {
+  background: linear-gradient(to left, transparent 50%, rgb(137, 119, 173) 50%)
+    100% 0% / 200%;
+}
+
+.coloringText:hover {
+  background: linear-gradient(to left, transparent 50%, rgb(137, 119, 173) 50%)
+    0% 0% / 200%;
 }

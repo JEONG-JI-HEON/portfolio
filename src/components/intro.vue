@@ -3,10 +3,14 @@
     <div class="left-intro">
       <ul class="linkContainer">
         <li>
-          <a href="">GitHub<span class="yellowPoint">.</span> </a>
+          <a href="" class="coloringText"
+            >GitHub<span class="purplePoint">.</span>
+          </a>
         </li>
         <li>
-          <a href="">Discord<span class="yellowPoint">.</span> </a>
+          <a href="" class="coloringText"
+            >Discord<span class="purplePoint">.</span>
+          </a>
         </li>
       </ul>
       <div class="bottomContainer">
@@ -14,7 +18,26 @@
         <p>Last update: 2023/01/19</p>
       </div>
     </div>
-    <div class="right-intro"></div>
+    <div class="right-intro">
+      <article class="intro-text">
+        <div class="top-text">
+          <span>도전을 좋아하는</span>
+        </div>
+        <div class="middle-text">
+          <strong>정지헌</strong>
+          <span>입니다.</span>
+        </div>
+        <div class="bottom-text">
+          <span>프론트엔드 개발자를 희망하고 있습니다.</span>
+          <span>항상 만족하지 않고 끊임없이 변화를 추구하려 합니다.</span>
+          <span>그렇기에 항상 배우는 자세를 잃지 않으려 합니다.</span>
+        </div>
+      </article>
+      <div class="introBg">
+        <img src="../../public/img/introBg.jpg" alt="" />
+      </div>
+      <div class="bottom-arrow"></div>
+    </div>
   </div>
 </template>
 
@@ -61,12 +84,17 @@ export default {
 .linkContainer > li {
   width: 100%;
   height: 100%;
+  margin-left: 0.5px;
 }
 
 .linkContainer > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
   font-size: 30px;
   text-align: left;
   padding: 10px;
+  transition: all 0.25s ease 0s;
 }
 
 .linkContainer > li .yellowPoint {
@@ -88,5 +116,59 @@ export default {
 .right-intro {
   width: 80vw;
   height: 100%;
+}
+
+.intro-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.intro-text .top-text {
+}
+
+.intro-text .middle-text strong {
+  font-size: 85px;
+  background-size: 100% 100%;
+  background-image: linear-gradient(transparent 80%, rgb(137, 119, 173) 20%);
+}
+
+.intro-text .bottom-text {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.introBg {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  width: 100vw;
+  height: 100%;
+}
+
+.introBg img {
+  display: block;
+  width: 80vw;
+  height: 100vh;
+  opacity: 0.5;
+  object-fit: cover;
 }
 </style>
