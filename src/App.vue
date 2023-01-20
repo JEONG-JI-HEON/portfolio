@@ -3,10 +3,10 @@
     <Intro />
   </section>
   <section id="mainSection">
-    <nav>
+    <nav id="scrollSpy-wrap">
       <scrollSpy />
     </nav>
-    <div id="contents">
+    <div id="contents-wrap">
       <education />
       <profile />
       <project />
@@ -56,8 +56,23 @@ export default {
 #mainSection {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #f5f5f5;
   position: relative;
   z-index: 1;
+  display: flex;
+}
+#scrollSpy-wrap {
+  position: sticky;
+  top: 0px;
+  width: 20vw;
+  height: 100vh;
+}
+
+#contents-wrap {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 }
 </style>

@@ -14,14 +14,37 @@ p {
 
 h1 {
   font-size: 70px;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 h3 {
   font-size: 20px;
+}
+
+.underLine {
+  width: 60vw;
+  height: 6.5px;
+  margin-top: 30px;
+  background-color: rgb(137, 119, 173);
+}
+
+.artmargin {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.introduction {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 70px;
 }
 
 .purplePoint {
@@ -36,4 +59,10 @@ h3 {
 .coloringText:hover {
   background: linear-gradient(to left, transparent 50%, rgb(137, 119, 173) 50%)
     0% 0% / 200%;
+}
+
+.purpleLine {
+  height: 6.5px;
+  margin-top: 30px;
+  background-color: rgb(137, 119, 173);
 }

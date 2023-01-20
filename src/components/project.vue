@@ -1,7 +1,7 @@
 <template>
-  <div class="project">
+  <article id="project" class="artmargin">
     <h1>project</h1>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -12,4 +12,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+#project {
+  padding-bottom: 500px;
+}
+</style>

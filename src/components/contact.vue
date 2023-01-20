@@ -1,7 +1,7 @@
 <template>
-  <div class="contact">
+  <article id="contact" class="artmargin">
     <h1>contact</h1>
-  </div>
+  </article>
 </template>
 
 <script>

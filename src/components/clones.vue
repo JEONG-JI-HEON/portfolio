@@ -1,7 +1,7 @@
 <template>
-  <div class="clones">
+  <article id="clones" class="artmargin">
     <h1>clones</h1>
-  </div>
+  </article>
 </template>
 
 <script>
