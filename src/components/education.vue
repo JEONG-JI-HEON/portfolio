@@ -6,16 +6,16 @@
     </h1>
     <article class="introduction">
       <span class="intro-subtitle">교육</span>
-      <h2>
-        <a href="#">
-          [디지털컨버전스]뷰(Vue) 활용 프론트엔드 웹개발자 양성과정</a
-        >
+      <h2 id="greenComputer">
+        <a href="#" class="titlehover">
+          [디지털컨버전스]뷰(Vue) 활용 프론트엔드 웹개발자 양성과정
+        </a>
       </h2>
-      <span>2022/9/1 ~ 2023/2/14</span>
+      <span class="explainDate">2022/9/1 ~ 2023/2/14</span>
       <article>
-        <div>
-          <div></div>
-          <div>노원 그린컴퓨터 아카데미 교육과정</div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">노원 그린컴퓨터 아카데미 교육과정</div>
         </div>
       </article>
     </article>
@@ -32,15 +32,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #education {
-  padding-bottom: 500px;
-}
-
-.introduction {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  row-gap: 25px;
-  position: relative;
-  width: 900px;
-  background-color: rgb(245, 245, 245);
+  row-gap: 70px;
 }
 </style>

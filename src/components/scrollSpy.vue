@@ -7,11 +7,21 @@
     >
       <p class="spy-title">{{ scrollS.title }}</p>
       <ul>
-        <li v-if="scrollS.content1" class="scrollCon">
+        <li
+          v-if="scrollS.content1"
+          class="scrollCon"
+          @click="goSection"
+          v-bind:data-target="scrollS.content1Id"
+        >
           <div class="miniCircle"></div>
           {{ scrollS.content1 }}
         </li>
-        <li v-if="scrollS.content2" class="scrollCon">
+        <li
+          v-if="scrollS.content2"
+          class="scrollCon"
+          @click="goSection"
+          v-bind:data-target="scrollS.content2Id"
+        >
           <div class="miniCircle"></div>
           {{ scrollS.content2 }}
         </li>
@@ -42,9 +52,25 @@ export default {
   },
   setup() {
     const scrollSpy = reactive([
-      { title: "Education", content1: "노원 그린컴퓨터아카데미" },
-      { title: "Profile", content1: "인적사항&경험사항", content2: "Skills" },
-      { title: "Project", content1: "팀 프로젝트", content2: "개인 프로젝트" },
+      {
+        title: "Education",
+        content1: "노원 그린컴퓨터아카데미",
+        content1Id: "greenComputer",
+      },
+      {
+        title: "Profile",
+        content1: "인적사항&경험사항",
+        content1Id: "profiles",
+        content2: "Skills",
+        content2Id: "skills",
+      },
+      {
+        title: "Project",
+        content1: "팀 프로젝트",
+        content1Id: "teamProject",
+        content2: "개인 프로젝트",
+        content2Id: "persProject",
+      },
       {
         title: "Clone",
         content1: "도시락통",

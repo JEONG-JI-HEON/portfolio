@@ -25,7 +25,13 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.artmargin {
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .underLine {
@@ -35,16 +41,43 @@ h3 {
   background-color: rgb(137, 119, 173);
 }
 
-.artmargin {
-  margin-top: 50px;
-  margin-bottom: 100px;
+.checkIcon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  display: inline-block;
+  background-image: url(../../img/check.png);
+  margin-right: 10px;
 }
 
-.introduction {
+.titlehover {
+  width: auto;
+  background: linear-gradient(to left, transparent 50%, rgb(144, 132, 221) 50%)
+    100% 0% / 200%;
+  transition: all 0.25s ease 0s;
+}
+
+.titlehover:hover {
+  background: linear-gradient(to left, transparent 50%, rgb(144, 132, 221) 50%)
+    0% 0% / 200%;
+  text-underline-offset: 3.5px;
+}
+
+.intro-subtitle {
+  font-size: 24px;
+}
+
+.explainDate {
+  font-size: 18px;
+}
+
+.explain {
   display: flex;
-  width: 100%;
-  flex-direction: column;
-  row-gap: 70px;
+  align-items: center;
+}
+
+.explainTxt {
+  font-size: 20px;
 }
 
 .purplePoint {
@@ -65,4 +98,12 @@ h3 {
   height: 6.5px;
   margin-top: 30px;
   background-color: rgb(137, 119, 173);
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  position: relative;
+  width: 900px;
 }
