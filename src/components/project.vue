@@ -4,9 +4,9 @@
       Project<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
-    <article class="introduction">
+    <article id="teamProject" class="introduction observed">
       <span class="intro-subtitle">팀 프로젝트</span>
-      <h2 id="teamProject" class="titleWithGithub observed">
+      <h2 class="titleWithGithub">
         <a href="#" class="titlehover">KB저축은행</a>
         <div class="githubIcon"><a href=""></a></div>
       </h2>
@@ -58,9 +58,9 @@
         </div>
       </article>
     </article>
-    <article class="introduction">
+    <article id="persProject1" class="introduction observed">
       <span class="intro-subtitle">개인 프로젝트</span>
-      <h2 id="persProject1" class="titleWithGithub observed">
+      <h2 class="titleWithGithub">
         <a href="#" class="titlehover">아리랑시네센터</a>
         <div class="githubIcon"><a href=""></a></div>
       </h2>
@@ -121,8 +121,8 @@
         </div>
       </article>
     </article>
-    <article class="introduction">
-      <h2 id="persProject2" class="titleWithGithub observed">
+    <article id="persProject2" class="introduction observed">
+      <h2 class="titleWithGithub">
         <a href="#" class="titlehover">서문시장</a>
         <div class="githubIcon"><a href=""></a></div>
       </h2>
@@ -173,8 +173,8 @@
         </div>
       </article>
     </article>
-    <article class="introduction">
-      <h2 id="persProject3" class="titleWithGithub observed">
+    <article id="persProject3" class="introduction observed">
+      <h2 class="titleWithGithub">
         <a href="#" class="titlehover">개인 포토폴리오 개발 (현재페이지)</a>
         <div class="githubIcon"><a href=""></a></div>
       </h2>

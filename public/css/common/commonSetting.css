@@ -52,7 +52,7 @@ h3 {
 
 .titlehover {
   width: auto;
-  margin-right: 0.5px;
+  margin-left: -0.5px;
   background: linear-gradient(to left, transparent 50%, rgb(144, 132, 221) 50%)
     100% 0% / 200%;
   transition: all 0.25s ease 0s;
@@ -86,7 +86,7 @@ h3 {
 }
 
 .coloringText {
-  margin-right: 0.5px;
+  margin-left: -0.5px;
   background: linear-gradient(to left, transparent 50%, rgb(137, 119, 173) 50%)
     100% 0% / 200%;
 }
@@ -108,4 +108,9 @@ h3 {
   row-gap: 25px;
   position: relative;
   width: 900px;
+}
+
+.observed {
+  opacity: 0;
+  transition: opacity 0.7s ease 0s;
 }

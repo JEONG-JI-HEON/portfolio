@@ -71,13 +71,14 @@ export default {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: [1],
+      threshold: [0.5],
     };
     let articles = document.getElementsByClassName("observed");
     const scrollNav = document.querySelectorAll(".scrollNav");
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
           scrollNav.forEach((nav) => {
             if (entry.target.id === nav.dataset.target) {
               nav.classList.add("active");
@@ -115,13 +116,13 @@ export default {
       {
         title: "Project",
         titleId: "Proj",
-        content1: "KB저축은행 (팀프로젝트)",
+        content1: "KB저축은행 (팀)",
         content1Id: "teamProject",
-        content2: "아리랑시네센터",
+        content2: "아리랑시네센터 (개인)",
         content2Id: "persProject1",
-        content3: "서문시장",
+        content3: "서문시장 (개인)",
         content3Id: "persProject2",
-        content4: "포토폴리오",
+        content4: "포토폴리오 (개인)",
         content4Id: "persProject3",
       },
       {

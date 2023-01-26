@@ -4,10 +4,8 @@
       Contact<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
-    <article class="introduction">
-      <span id="myContact" class="intro-subtitle observed"
-        >끝까지 봐주셔서 감사합니다.</span
-      >
+    <article id="myContact" class="introduction observed">
+      <span class="intro-subtitle">끝까지 봐주셔서 감사합니다.</span>
       <article>
         <div
           v-for="contact in contact"
@@ -101,12 +99,8 @@ export default {
 }
 
 .contact-accordion.open {
-  margin: 16px 0;
   box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
     0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-}
-.contact-accordion.open:last-child {
-  margin-bottom: 0;
 }
 
 .contact-title {

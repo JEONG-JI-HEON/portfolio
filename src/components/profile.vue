@@ -4,9 +4,9 @@
       Profile<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
-    <article class="myProfile">
+    <article class="myProfile observed" id="profiles">
       <article class="informationP">
-        <span id="profiles" class="intro-subtitle observed">인적사항</span>
+        <span class="intro-subtitle">인적사항</span>
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">정지헌</div>
@@ -36,8 +36,8 @@
         </div>
       </article>
     </article>
-    <article class="introduction">
-      <span id="skills" class="intro-subtitle observed">Skills</span>
+    <article id="skills" class="introduction observed">
+      <span class="intro-subtitle">Skills</span>
       <article class="introduction-skills">
         <div class="skillIcons">
           <div class="skillImg" id="html5I"></div>

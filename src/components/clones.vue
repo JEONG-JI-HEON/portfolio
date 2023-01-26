@@ -4,25 +4,25 @@
       Clones<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
-    <article class="introduction">
+    <article id="dosiraktong" class="introduction observed">
       <span id="cloning" class="intro-subtitle">클론 코딩</span>
-      <h2 id="dosiraktong" class="observed">
+      <h2>
         <a href="#" class="titlehover">도시락통</a>
       </h2>
       <div class="cloneImg-wrap">
         <div class="cloneImg dosiraktong"></div>
       </div>
     </article>
-    <article class="introduction">
-      <h2 id="singrunzip" class="observed">
+    <article id="singrunzip" class="introduction observed">
+      <h2>
         <a href="#" class="titlehover">싱그러운집</a>
       </h2>
       <div class="cloneImg-wrap">
         <div class="cloneImg singrunzip"></div>
       </div>
     </article>
-    <article class="introduction">
-      <h2 id="therichmond" class="observed">
+    <article id="therichmond" class="introduction observed">
+      <h2>
         <a href="#" class="titlehover">더 리치먼드</a>
       </h2>
       <div class="cloneImg-wrap">
