@@ -1,12 +1,12 @@
 <template>
   <article id="profile" class="artmargin">
-    <h1 class="intro-title">
+    <h1 id="Prof" class="intro-title observed">
       Profile<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
-    <article class="myProfile" id="profiles">
+    <article class="myProfile">
       <article class="informationP">
-        <span class="intro-subtitle">인적사항</span>
+        <span id="profiles" class="intro-subtitle observed">인적사항</span>
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">정지헌</div>
@@ -37,7 +37,7 @@
       </article>
     </article>
     <article class="introduction">
-      <span id="skills" class="intro-subtitle">Skills</span>
+      <span id="skills" class="intro-subtitle observed">Skills</span>
       <article class="introduction-skills">
         <div class="skillIcons">
           <div class="skillImg" id="html5I"></div>

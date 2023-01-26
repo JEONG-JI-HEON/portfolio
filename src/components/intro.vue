@@ -61,8 +61,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* -webkit-box-pack: justify;
-  -webkit-box-align: center; */
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
   align-items: center;
   width: 20vw;
   height: 100%;
@@ -84,7 +84,6 @@ export default {
 .linkContainer > li {
   width: 100%;
   height: 100%;
-  margin-left: 0.5px;
 }
 
 .linkContainer > li > a {
@@ -134,9 +133,6 @@ export default {
   height: 100%;
   font-size: 50px;
   font-weight: bold;
-}
-
-.intro-text .top-text {
 }
 
 .intro-text .middle-text strong {

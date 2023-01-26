@@ -1,12 +1,12 @@
 <template>
   <article id="education" class="artmargin">
-    <h1 class="intro-title">
+    <h1 id="Edu" class="intro-title active observed">
       Education<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
     <article class="introduction">
       <span class="intro-subtitle">교육</span>
-      <h2 id="greenComputer">
+      <h2 id="greenComputer" class="observed">
         <a href="#" class="titlehover">
           [디지털컨버전스]뷰(Vue) 활용 프론트엔드 웹개발자 양성과정
         </a>

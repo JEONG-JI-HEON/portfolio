@@ -14,6 +14,9 @@
       <contact />
     </div>
   </section>
+  <footer id="footer-wrap">
+    Copyright 2023. JeongJiHeon all rights reserved.
+  </footer>
 </template>
 
 <script>
@@ -74,5 +77,19 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 40px;
+}
+
+#footer-wrap {
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: 220px;
+  background-color: rgb(245, 245, 245);
+  color: rgb(133, 133, 133);
+  z-index: 1;
 }
 </style>

@@ -1,18 +1,18 @@
 <template>
   <article id="project" class="artmargin">
-    <h1 class="intro-title">
+    <h1 id="Proj" class="intro-title observed">
       Project<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
     <article class="introduction">
-      <span id="teamProject" class="intro-subtitle">팀 프로젝트</span>
-      <h2 class="titleWithGithub">
+      <span class="intro-subtitle">팀 프로젝트</span>
+      <h2 id="teamProject" class="titleWithGithub observed">
         <a href="#" class="titlehover">KB저축은행</a>
         <div class="githubIcon"><a href=""></a></div>
       </h2>
       <span class="explainDate">2022년 11월 1일 ~ 2022년 12월 30일</span>
       <div class="projectImg-wrap">
-        <div class="projectImg"></div>
+        <div class="projectImg kbsaving"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
@@ -59,19 +59,19 @@
       </article>
     </article>
     <article class="introduction">
-      <span id="persProject" class="intro-subtitle">개인 프로젝트</span>
-      <h2 class="titleWithGithub">
+      <span class="intro-subtitle">개인 프로젝트</span>
+      <h2 id="persProject1" class="titleWithGithub observed">
         <a href="#" class="titlehover">아리랑시네센터</a>
         <div class="githubIcon"><a href=""></a></div>
       </h2>
       <span class="explainDate">2022년 10월 10일 ~ 2022년 12월 27일</span>
       <div class="projectImg-wrap">
-        <div class="projectImg"></div>
+        <div class="projectImg arirnag"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">영화 소개 및 예매 페이지</div>
+          <div class="explainTxt">영화 소개 및 검색 페이지</div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
@@ -122,13 +122,13 @@
       </article>
     </article>
     <article class="introduction">
-      <h2 class="titleWithGithub">
+      <h2 id="persProject2" class="titleWithGithub observed">
         <a href="#" class="titlehover">서문시장</a>
         <div class="githubIcon"><a href=""></a></div>
       </h2>
       <span class="explainDate">2022년 9월 10일 ~ 2022년 10월 7일</span>
       <div class="projectImg-wrap">
-        <div class="projectImg"></div>
+        <div class="projectImg seomoon"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
@@ -174,13 +174,13 @@
       </article>
     </article>
     <article class="introduction">
-      <h2 class="titleWithGithub">
+      <h2 id="persProject3" class="titleWithGithub observed">
         <a href="#" class="titlehover">개인 포토폴리오 개발 (현재페이지)</a>
         <div class="githubIcon"><a href=""></a></div>
       </h2>
       <span class="explainDate">2023년 1월 ~ 2023년 2월</span>
       <div class="projectImg-wrap">
-        <div class="projectImg"></div>
+        <div class="projectImg portfolio"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
@@ -333,8 +333,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #project {
-  display: flex;
   width: 100%;
+  display: flex;
   flex-direction: column;
   row-gap: 70px;
 }
@@ -373,7 +373,9 @@ export default {
 .projectImg {
   width: 700px;
   height: 350px;
-  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .introduction-projects {
   display: flex;
@@ -396,12 +398,28 @@ export default {
   margin-right: 5px;
 }
 
+.kbsaving {
+  background-image: url(../../public/img/kbsaving.png);
+}
+
+.arirnag {
+  background-image: url(../../public/img/arirang.PNG);
+}
+
+.seomoon {
+  background-image: url(../../public/img/seomoon.PNG);
+}
+
+.portfolio {
+  background-image: url(../../public/img/portfolio.PNG);
+}
+
 .tech-accordion {
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: margin 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
     0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
@@ -414,8 +432,8 @@ export default {
   content: "";
   opacity: 1;
   position: absolute;
-  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   background-color: rgba(0, 0, 0, 0.12);
 }
 
@@ -423,6 +441,9 @@ export default {
   margin: 16px 0;
   box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
     0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.tech-accordion.open:last-child {
+  margin-bottom: 0;
 }
 
 .tech-title {
@@ -434,7 +455,7 @@ export default {
   justify-content: space-between;
   background-color: white;
   cursor: pointer;
-  transition: padding 0.3s ease;
+  transition: padding 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .tech-title.open {
@@ -448,7 +469,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .arrow.open {
@@ -460,11 +481,9 @@ export default {
   padding: 0px 16px;
   overflow: hidden;
   background-color: white;
-  transition: max-height 0.3s ease;
-}
-
-.tech-accordion:last-child {
-  margin-bottom: 0;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition-duration: 0.237s;
 }
 
 .tech-content.open {
