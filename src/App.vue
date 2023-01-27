@@ -17,6 +17,7 @@
   <footer id="footer-wrap">
     Copyright 2023. JeongJiHeon all rights reserved.
   </footer>
+  <button class="scrollTopBtn" @click="scrollToTop"></button>
 </template>
 
 <script>
@@ -38,6 +39,43 @@ export default {
     project,
     clones,
     contact,
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    },
+  },
+  mounted() {
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        let leftIntro = document.querySelector(".left-intro");
+        let topTxt = document.querySelector(".top-text");
+        leftIntro.style.opacity = 1;
+        topTxt.style.opacity = 1;
+        topTxt.style.top = 0;
+      }, 1000);
+      setTimeout(() => {
+        let middleTxt = document.querySelector(".middle-text");
+        middleTxt.style.opacity = 1;
+        middleTxt.style.top = 0;
+      }, 1500);
+      setTimeout(() => {
+        let bottomTxt = document.querySelector(".bottom-text");
+        let middleLine = document.querySelector(".myName");
+        bottomTxt.style.opacity = 1;
+        bottomTxt.style.top = 0;
+        middleLine.classList.add("expand");
+      }, 2000);
+      setTimeout(() => {
+        let arrow = document.querySelector(".bottom-arrow");
+        arrow.style.opacity = 1;
+        arrow.style.top = 0;
+      }, 3000);
+    });
   },
 };
 </script>
@@ -91,5 +129,30 @@ export default {
   background-color: rgb(245, 245, 245);
   color: rgb(133, 133, 133);
   z-index: 1;
+}
+
+.scrollTopBtn {
+  position: fixed;
+  right: 24px;
+  bottom: 0px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(239, 239, 239);
+  background-image: url(../public/img/top.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  border-radius: 26px;
+  border: none;
+  transition: all 0.3s ease 0s;
+  margin: 25px;
+  z-index: 100;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px, rgb(0 0 0 / 15%) 0px 8px 30px,
+    rgb(255 255 255 / 20%) 0px 0px 0px 1px inset;
+  cursor: pointer;
+}
+
+.scrollTopBtn:hover {
+  background-color: rgb(200, 200, 200);
 }
 </style>

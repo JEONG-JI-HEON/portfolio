@@ -24,7 +24,7 @@
           <span>도전을 좋아하는</span>
         </div>
         <div class="middle-text">
-          <strong>정지헌</strong>
+          <strong class="myName">정지헌</strong>
           <span>입니다.</span>
         </div>
         <div class="bottom-text">
@@ -32,6 +32,7 @@
           <span>항상 만족하지 않고 끊임없이 변화를 추구하려 합니다.</span>
           <span>그렇기에 항상 배우는 자세를 잃지 않으려 합니다.</span>
         </div>
+        <div class="bottom-arrow"></div>
       </article>
       <div class="introBg">
         <img src="../../public/img/introBg.jpg" alt="" />
@@ -67,6 +68,8 @@ export default {
   width: 20vw;
   height: 100%;
   background-color: rgb(32, 34, 36);
+  opacity: 0;
+  transition: opacity 1s ease 0s;
 }
 
 .linkContainer {
@@ -135,10 +138,39 @@ export default {
   font-weight: bold;
 }
 
-.intro-text .middle-text strong {
+.intro-text .top-text {
+  position: relative;
+  top: -10%;
+  opacity: 0;
+  transition: all 0.7s ease 0s;
+}
+
+.intro-text .middle-text {
+  position: relative;
+  top: -10%;
+  opacity: 0;
+  transition: all 0.7s ease 0s;
+}
+
+.myName {
   font-size: 85px;
-  background-size: 100% 100%;
-  background-image: linear-gradient(transparent 80%, rgb(137, 119, 173) 20%);
+  position: relative;
+}
+
+.myName::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 20px;
+  background-color: rgb(137, 119, 173);
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.myName.expand::after {
+  width: 100%;
 }
 
 .intro-text .bottom-text {
@@ -150,6 +182,41 @@ export default {
   align-items: center;
   font-size: 30px;
   font-weight: normal;
+  position: relative;
+  top: -10%;
+  opacity: 0;
+  transition: all 0.7s ease 0s;
+}
+
+.bottom-arrow {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../public/img/scroll_down.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 100px;
+  animation: 1.5s ease 0s infinite normal none running bounce;
+  position: relative;
+  top: -10%;
+  opacity: 0;
+  transition: all 0.7s ease 0s;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-27px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
 }
 
 .introBg {

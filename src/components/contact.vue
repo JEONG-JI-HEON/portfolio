@@ -22,12 +22,15 @@
             <div class="arrow" v-bind:class="{ open: contact.isOpen }"></div>
           </div>
           <div class="contact-content" v-bind:class="{ open: contact.isOpen }">
+            <div class="call-icon"></div>
             {{ contact.content1 }}
           </div>
           <div class="contact-content" v-bind:class="{ open: contact.isOpen }">
+            <div class="mail-icon"></div>
             {{ contact.content2 }}
           </div>
           <div class="contact-content" v-bind:class="{ open: contact.isOpen }">
+            <div class="github-icon"></div>
             {{ contact.content3 }}
           </div>
         </div>
@@ -141,10 +144,35 @@ export default {
   transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s,
     background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition-duration: 0.237s;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .contact-content.open {
   max-height: 100px;
   padding: 8px 16px 16px;
+}
+
+.call-icon,
+.mail-icon,
+.github-icon {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.call-icon {
+  background-image: url(../../public/img/phone-call.png);
+}
+
+.mail-icon {
+  background-image: url(../../public/img/email.png);
+}
+
+.github-icon {
+  background-image: url(../../public/img/github.png);
 }
 </style>

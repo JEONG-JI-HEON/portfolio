@@ -68,33 +68,44 @@ export default {
   },
   computed: {},
   mounted() {
-    const options = {
+    const option1 = {
       root: null,
-      rootMargin: "0px",
-      threshold: [0.5],
+      rootMargin: "0px 0px -80% 0px",
+      threshold: [0],
+    };
+    const option2 = {
+      root: null,
+      rootMargin: "60% 0px 0px 0px",
+      threshold: [0],
     };
     let articles = document.getElementsByClassName("observed");
     const scrollNav = document.querySelectorAll(".scrollNav");
-    this.observer = new IntersectionObserver((entries) => {
+    // scrollspy가 감지하기 위한 함수
+    this.observer1 = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = 1;
+          // entry.target.style.opacity = 1;
           scrollNav.forEach((nav) => {
             if (entry.target.id === nav.dataset.target) {
               nav.classList.add("active");
-            }
-          });
-        } else {
-          scrollNav.forEach((nav) => {
-            if (entry.target.id === nav.dataset.target) {
+            } else {
               nav.classList.remove("active");
             }
           });
         }
       });
-    }, options);
+    }, option1);
+    // 화면 투명도를 위한 함수
+    this.observer2 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+        }
+      });
+    }, option2);
     Array.from(articles).forEach((article) => {
-      this.observer.observe(article);
+      this.observer1.observe(article);
+      this.observer2.observe(article);
     });
   },
   setup() {
@@ -186,7 +197,7 @@ export default {
 }
 
 .scrollCon.active {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   color: rgb(144, 132, 221);
 }
 

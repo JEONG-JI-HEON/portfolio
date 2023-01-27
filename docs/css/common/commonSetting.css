@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.artmargin {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.underLine {
+  width: 60vw;
+  height: 6.5px;
+  margin-top: 30px;
+  background-color: rgb(137, 119, 173);
+}
+
+.checkIcon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  display: inline-block;
+  background-image: url(../../img/check.png);
+  margin-right: 10px;
+}
+
+.titlehover {
+  width: auto;
+  margin-left: -0.5px;
+  background: linear-gradient(to left, transparent 50%, rgb(144, 132, 221) 50%)
+    100% 0% / 200%;
+  transition: all 0.25s ease 0s;
+}
+
+.titlehover:hover {
+  background: linear-gradient(to left, transparent 50%, rgb(144, 132, 221) 50%)
+    0% 0% / 200%;
+  text-underline-offset: 3.5px;
+}
+
+.intro-subtitle {
+  font-size: 24px;
+}
+
+.explainDate {
+  font-size: 18px;
+}
+
+.explain {
+  display: flex;
+  align-items: center;
+}
+
+.explainTxt {
+  font-size: 20px;
+}
+
+.purplePoint {
+  color: #8977ad;
+}
+
+.coloringText {
+  margin-left: -0.5px;
+  background: linear-gradient(to left, transparent 50%, rgb(137, 119, 173) 50%)
+    100% 0% / 200%;
+}
+
+.coloringText:hover {
+  background: linear-gradient(to left, transparent 50%, rgb(137, 119, 173) 50%)
+    0% 0% / 200%;
+}
+
+.purpleLine {
+  height: 6.5px;
+  margin-top: 30px;
+  background-color: rgb(137, 119, 173);
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  position: relative;
+  width: 900px;
+}
+
+.observed {
+  opacity: 0;
+  transition: opacity 1s ease 0s;
+}

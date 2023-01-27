@@ -7,7 +7,10 @@
     <article id="greenComputer" class="introduction observed">
       <span class="intro-subtitle">교육</span>
       <h2>
-        <a href="#" class="titlehover">
+        <a
+          href="https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20210000349578&tracseTme=1&crseTracseSe=C0061&trainstCstmrId=500020044993#undefined"
+          class="titlehover"
+        >
           [디지털컨버전스]뷰(Vue) 활용 프론트엔드 웹개발자 양성과정
         </a>
       </h2>
