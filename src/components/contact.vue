@@ -175,4 +175,10 @@ export default {
 .github-icon {
   background-image: url(../../public/img/github.png);
 }
+
+@media (max-width: 600px) {
+  #contact {
+    row-gap: 55px;
+  }
+}
 </style>

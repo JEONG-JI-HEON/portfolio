@@ -28,6 +28,10 @@
         <span class="intro-subtitle">경험사항</span>
         <div class="explain">
           <div class="checkIcon"></div>
+          <div class="explainTxt">나이스 프렌즈 (2018.09 ~ 2019.05)</div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
           <div class="explainTxt">제 20대 대통령 선거 투표사무원</div>
         </div>
         <div class="explain">
@@ -175,5 +179,24 @@ export default {
 
 #mySQLI {
   background-image: url(../../public/img/mysql.png);
+}
+
+@media (max-width: 1080px) {
+  .myProfile {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .myProfile {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  #profile {
+    row-gap: 55px;
+  }
 }
 </style>

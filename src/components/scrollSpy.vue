@@ -170,7 +170,7 @@ export default {
   -webkit-box-pack: justify;
   justify-content: space-between;
   margin: auto;
-  width: 209.4px;
+  width: 200px;
   height: 60vh;
 }
 

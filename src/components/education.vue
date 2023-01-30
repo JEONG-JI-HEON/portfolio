@@ -40,4 +40,10 @@ export default {
   flex-direction: column;
   row-gap: 70px;
 }
+
+@media (max-width: 600px) {
+  #education {
+    row-gap: 55px;
+  }
+}
 </style>

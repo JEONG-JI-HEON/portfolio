@@ -124,6 +124,7 @@ export default {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 220px;
   background-color: rgb(245, 245, 245);
@@ -154,5 +155,26 @@ export default {
 
 .scrollTopBtn:hover {
   background-color: rgb(200, 200, 200);
+}
+
+@media (max-width: 1100px) {
+  #scrollSpy-wrap {
+    display: none;
+  }
+  .scrollTopBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  #introSection {
+    height: 136vh;
+  }
+}
+
+@media (max-width: 600px) {
+  #contents-wrap {
+    padding: 20px;
+  }
 }
 </style>

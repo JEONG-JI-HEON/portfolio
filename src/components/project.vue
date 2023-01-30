@@ -6,16 +6,18 @@
     </h1>
     <article id="teamProject" class="introduction observed">
       <span class="intro-subtitle">팀 프로젝트</span>
-      <h2 class="titleWithGithub">
-        <a
-          href="http://kbsaving-env.eba-rinmdekn.ap-northeast-2.elasticbeanstalk.com/"
-          class="titlehover"
-          >KB저축은행</a
-        >
+      <div class="titleWithGithub">
+        <h2>
+          <a
+            href="http://kbsaving-env.eba-rinmdekn.ap-northeast-2.elasticbeanstalk.com/"
+            class="titlehover"
+            >KB저축은행</a
+          >
+        </h2>
         <a href=""
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
-      </h2>
+      </div>
       <span class="explainDate">2022년 11월 1일 ~ 2022년 12월 30일</span>
       <div class="projectImg-wrap">
         <div class="projectImg kbsaving"></div>
@@ -66,16 +68,18 @@
     </article>
     <article id="persProject1" class="introduction observed">
       <span class="intro-subtitle">개인 프로젝트</span>
-      <h2 class="titleWithGithub">
-        <a
-          href="http://arirang-env.eba-6msdgjyc.ap-northeast-2.elasticbeanstalk.com/"
-          class="titlehover"
-          >아리랑시네센터</a
-        >
+      <div class="titleWithGithub">
+        <h2>
+          <a
+            href="http://arirang-env.eba-6msdgjyc.ap-northeast-2.elasticbeanstalk.com/"
+            class="titlehover"
+            >아리랑시네센터</a
+          >
+        </h2>
         <a href=""
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
-      </h2>
+      </div>
       <span class="explainDate">2022년 10월 10일 ~ 2022년 12월 27일</span>
       <div class="projectImg-wrap">
         <div class="projectImg arirnag"></div>
@@ -134,16 +138,18 @@
       </article>
     </article>
     <article id="persProject2" class="introduction observed">
-      <h2 class="titleWithGithub">
-        <a
-          href="http://seomoonmarket-env.eba-dumip8jh.ap-northeast-2.elasticbeanstalk.com/"
-          class="titlehover"
-          >서문시장</a
-        >
+      <div class="titleWithGithub">
+        <h2>
+          <a
+            href="http://seomoonmarket-env.eba-dumip8jh.ap-northeast-2.elasticbeanstalk.com/"
+            class="titlehover"
+            >서문시장</a
+          >
+        </h2>
         <a href=""
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
-      </h2>
+      </div>
       <span class="explainDate">2022년 9월 10일 ~ 2022년 10월 7일</span>
       <div class="projectImg-wrap">
         <div class="projectImg seomoon"></div>
@@ -192,12 +198,14 @@
       </article>
     </article>
     <article id="persProject3" class="introduction observed">
-      <h2 class="titleWithGithub">
-        <a href="#" class="titlehover">개인 포토폴리오 개발 (현재페이지)</a>
+      <div class="titleWithGithub">
+        <h2>
+          <a href="/" class="titlehover">개인 포토폴리오 개발 (현재페이지)</a>
+        </h2>
         <a href=""
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
-      </h2>
+      </div>
       <span class="explainDate">2023년 1월 ~ 2023년 2월</span>
       <div class="projectImg-wrap">
         <div class="projectImg portfolio"></div>
@@ -260,7 +268,8 @@ export default {
         {
           id: 1,
           title: "HTML5, CSS, JavaScript, jQuery",
-          content: "이를 기반으로 디자인 및 동적효과를 주었습니다.",
+          content:
+            "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
           isOpen: false,
         },
         {
@@ -279,14 +288,14 @@ export default {
           id: 4,
           title: "mySQL",
           content:
-            "회원정보, 공지사항, 사진게시판의 데이터를 저장하고, 데이터를 불러오기 위해 사용했습니다.",
+            "회원정보, 공지사항, 사진게시판의 데이터를 저장해두기 위해 사용했습니다.",
           isOpen: false,
         },
         {
           id: 5,
           title: "aws",
           content:
-            "Elastic Beanstalk으로 만든 환경에 제 Github를 연결한 CodePipeline를 통해 배포를 하였습니다. 데이터는 RDS를 통해 데이터베이스를 만들고 거기에 mySQL과 연결하여 연동했습니다.",
+            "Elastic Beanstalk으로 만든 환경에 제 Github를 연결한 CodePipeline를 통해 배포를 하였습니다. 데이터는 RDS를 통해 데이터베이스를 만들고 거기에 mySQL의 정보를 불러와 연결했습니다.",
           isOpen: false,
         },
       ],
@@ -294,7 +303,8 @@ export default {
         {
           id: 1,
           title: "HTML5, CSS, JavaScript",
-          content: "이를 기반으로 디자인 및 동적효과를 주었습니다.",
+          content:
+            "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
           isOpen: false,
         },
         {
@@ -313,14 +323,14 @@ export default {
           id: 4,
           title: "mySQL",
           content:
-            "회원정보, 공지사항, 사진게시판의 데이터를 저장하고, 데이터를 불러오기 위해 사용했습니다.",
+            "회원정보, 공지사항, 사진게시판의 데이터를 저장해두기 위해 사용했습니다.",
           isOpen: false,
         },
         {
           id: 5,
           title: "aws",
           content:
-            "Elastic Beanstalk으로 만든 환경에 제 Github를 연결한 CodePipeline를 통해 배포를 하였습니다. 데이터는 RDS를 통해 데이터베이스를 만들고 거기에 mySQL과 연결하여 연동했습니다.",
+            "Elastic Beanstalk으로 만든 환경에 제 Github를 연결한 CodePipeline를 통해 배포를 하였습니다. 데이터는 RDS를 통해 데이터베이스를 만들고 거기에 mySQL의 정보를 불러와 연결했습니다.",
           isOpen: false,
         },
       ],
@@ -328,7 +338,8 @@ export default {
         {
           id: 1,
           title: "HTML5, CSS, JavaScript, jQuery",
-          content: "이를 기반으로 디자인 및 동적효과를 주었습니다.",
+          content:
+            "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
           isOpen: false,
         },
         {
@@ -348,6 +359,13 @@ export default {
           id: 4,
           title: "vue3-lottie",
           content: "깃허브의 아이콘을 불러오기 위해 사용했습니다.",
+          isOpen: false,
+        },
+        {
+          id: 5,
+          title: "Prettier",
+          content:
+            "프로젝트 코드의 통일화를 위해 사용했습니다. 따옴표와 쌍 따옴표의 통일, 한 줄에 몇 자 이상시 자동 줄바꿈 등 코드의 일관성을 지킬 수 있습니다.",
           isOpen: false,
         },
       ],
@@ -400,10 +418,6 @@ export default {
   width: 70px;
   height: 70px;
   margin: 0;
-}
-
-.githubIcon:hover {
-  fill: red;
 }
 
 .projectImg-wrap {
@@ -530,5 +544,28 @@ export default {
 .tech-content.open {
   max-height: 100px;
   padding: 8px 16px 16px;
+}
+
+@media (max-width: 900px) {
+  .projectImg {
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+  }
+
+  .githubIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  #project {
+    row-gap: 55px;
+  }
+
+  .tech-content.open {
+    max-height: 200px;
+  }
 }
 </style>

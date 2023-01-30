@@ -3,7 +3,7 @@
     <div class="left-intro">
       <ul class="linkContainer">
         <li>
-          <a href="" class="coloringText"
+          <a href="https://github.com/JEONG-JI-HEON" class="coloringText"
             >GitHub<span class="purplePoint">.</span>
           </a>
         </li>
@@ -233,5 +233,67 @@ export default {
   height: 100vh;
   opacity: 0.5;
   object-fit: cover;
+}
+
+@media (max-width: 1080px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .left-intro {
+    width: 100%;
+    height: auto;
+    row-gap: 30px;
+  }
+
+  .right-intro {
+    width: 100%;
+  }
+
+  .intro-text {
+    font-size: 40px;
+  }
+
+  .myName {
+    font-size: 70px;
+  }
+
+  .intro-text .bottom-text {
+    font-size: 23px;
+  }
+
+  .introBg {
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .introBg img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .linkContainer {
+    row-gap: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-text {
+    font-size: 28px;
+    row-gap: 10px;
+  }
+
+  .myName {
+    font-size: 38px;
+  }
+
+  .intro-text .bottom-text {
+    row-gap: 5px;
+    font-size: 14px;
+  }
 }
 </style>

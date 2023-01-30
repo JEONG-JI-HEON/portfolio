@@ -72,4 +72,18 @@ export default {
 .therichmond {
   background-image: url(../../public/img/rich.PNG);
 }
+
+@media (max-width: 900px) {
+  .cloneImg {
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  #clones {
+    row-gap: 55px;
+  }
+}
 </style>
