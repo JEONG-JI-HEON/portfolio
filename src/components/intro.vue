@@ -8,7 +8,7 @@
           </a>
         </li>
         <li>
-          <a href="" class="coloringText"
+          <a href="https://discord.gg/SFwmc34bS2" class="coloringText"
             >Discord<span class="purplePoint">.</span>
           </a>
         </li>

@@ -39,13 +39,13 @@ export default {
   data() {
     return {
       clone1: {
-        imagePath: "/portfolio/img/dosirakFull.8b3ea1a9.png",
+        imagePath: require("../assets/dosirakFull.png"),
       },
       clone2: {
-        imagePath: "/portfolio/img/singFull.52861ae1.png",
+        imagePath: require("../assets/singFull.png"),
       },
       clone3: {
-        imagePath: "/portfolio/img/richFull.376ed0a4.png",
+        imagePath: require("../assets/richFull.png"),
       },
     };
   },
