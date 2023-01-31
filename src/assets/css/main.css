@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "NEXON Lv2 Gothic";
+  src: url("@/assets/fonts/NEXON Lv2 Gothic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NEXON Lv2 Gothic Bold";
+  src: url("@/assets/fonts/NEXON Lv2 Gothic Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "NEXON Lv2 Gothic", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.top-text,
+.middle-text {
+  font-family: "NEXON Lv2 Gothic Bold", sans-serif;
+}
