@@ -181,7 +181,13 @@ export default {
   background-image: url(../../public/img/mysql.png);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
+  .myProfile {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1000px) {
   .myProfile {
     width: 80vw;
   }

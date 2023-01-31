@@ -10,7 +10,7 @@
         <a href="#" class="titlehover">도시락통</a>
       </h2>
       <div class="cloneImg-wrap">
-        <div class="cloneImg dosiraktong"></div>
+        <div class="cloneImg dosiraktong" @click="emitEvent(clone1)"></div>
       </div>
     </article>
     <article id="singrunzip" class="introduction observed">
@@ -18,7 +18,7 @@
         <a href="#" class="titlehover">싱그러운집</a>
       </h2>
       <div class="cloneImg-wrap">
-        <div class="cloneImg singrunzip"></div>
+        <div class="cloneImg singrunzip" @click="emitEvent(clone2)"></div>
       </div>
     </article>
     <article id="therichmond" class="introduction observed">
@@ -26,7 +26,7 @@
         <a href="#" class="titlehover">더 리치먼드</a>
       </h2>
       <div class="cloneImg-wrap">
-        <div class="cloneImg therichmond"></div>
+        <div class="cloneImg therichmond" @click="emitEvent(clone3)"></div>
       </div>
     </article>
   </article>
@@ -36,6 +36,24 @@
 export default {
   name: "clonesPage",
   props: {},
+  data() {
+    return {
+      clone1: {
+        imagePath: "/portfolio/img/dosirakFull.8b3ea1a9.png",
+      },
+      clone2: {
+        imagePath: "/portfolio/img/singFull.52861ae1.png",
+      },
+      clone3: {
+        imagePath: "/portfolio/img/richFull.376ed0a4.png",
+      },
+    };
+  },
+  methods: {
+    emitEvent(data) {
+      this.$emit("openMockup", data);
+    },
+  },
 };
 </script>
 
@@ -52,6 +70,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .cloneImg {
   width: 700px;
@@ -59,6 +78,12 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  cursor: pointer;
+  transition: transform ease 0.5s;
+}
+
+.cloneImg:hover {
+  transform: scale(1.05);
 }
 
 .dosiraktong {

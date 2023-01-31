@@ -84,7 +84,6 @@ export default {
     this.observer1 = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // entry.target.style.opacity = 1;
           scrollNav.forEach((nav) => {
             if (entry.target.id === nav.dataset.target) {
               nav.classList.add("active");

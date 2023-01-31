@@ -9,14 +9,29 @@
     <div id="contents-wrap">
       <education />
       <profile />
-      <project />
-      <clones />
+      <project
+        @openMockup="
+          showMockup = true;
+          mockupData = $event;
+        "
+      />
+      <clones
+        @openMockup="
+          showMockup = true;
+          mockupData = $event;
+        "
+      />
       <contact />
     </div>
   </section>
   <footer id="footer-wrap">
     Copyright 2023. JeongJiHeon all rights reserved.
   </footer>
+  <MockupWindow
+    v-if="showMockup"
+    @close="showMockup = false"
+    :data="mockupData"
+  />
   <button class="scrollTopBtn" @click="scrollToTop"></button>
 </template>
 
@@ -29,6 +44,8 @@ import project from "./components/project.vue";
 import clones from "./components/clones.vue";
 import contact from "./components/contact.vue";
 
+import MockupWindow from "./mockup/mockup.vue";
+
 export default {
   name: "App",
   components: {
@@ -39,6 +56,13 @@ export default {
     project,
     clones,
     contact,
+    MockupWindow,
+  },
+  data() {
+    return {
+      showMockup: false,
+      mockupData: null,
+    };
   },
   methods: {
     scrollToTop() {
@@ -47,6 +71,10 @@ export default {
         left: 0,
         behavior: "smooth",
       });
+    },
+    openMockup(data) {
+      this.showMockup = true;
+      this.mockupData = data;
     },
   },
   mounted() {

@@ -14,13 +14,13 @@
             >KB저축은행</a
           >
         </h2>
-        <a href=""
+        <a href="https://github.com/JEONG-JI-HEON/kbbank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
       <span class="explainDate">2022년 11월 1일 ~ 2022년 12월 30일</span>
       <div class="projectImg-wrap">
-        <div class="projectImg kbsaving"></div>
+        <div class="projectImg kbsaving" @click="emitEvent(project1)"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
@@ -76,13 +76,13 @@
             >아리랑시네센터</a
           >
         </h2>
-        <a href=""
+        <a href="https://github.com/JEONG-JI-HEON/arirang"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
       <span class="explainDate">2022년 10월 10일 ~ 2022년 12월 27일</span>
       <div class="projectImg-wrap">
-        <div class="projectImg arirnag"></div>
+        <div class="projectImg arirnag" @click="emitEvent(project2)"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
@@ -146,13 +146,13 @@
             >서문시장</a
           >
         </h2>
-        <a href=""
+        <a href="https://github.com/JEONG-JI-HEON/seomoonmarket"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
       <span class="explainDate">2022년 9월 10일 ~ 2022년 10월 7일</span>
       <div class="projectImg-wrap">
-        <div class="projectImg seomoon"></div>
+        <div class="projectImg seomoon" @click="emitEvent(project3)"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
@@ -202,13 +202,13 @@
         <h2>
           <a href="/" class="titlehover">개인 포토폴리오 개발 (현재페이지)</a>
         </h2>
-        <a href=""
+        <a href="https://github.com/JEONG-JI-HEON/portfolio"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
       <span class="explainDate">2023년 1월 ~ 2023년 2월</span>
       <div class="projectImg-wrap">
-        <div class="projectImg portfolio"></div>
+        <div class="projectImg portfolio" @click="emitEvent(project4)"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
@@ -275,13 +275,15 @@ export default {
         {
           id: 2,
           title: "Node.js",
-          content: "서버를 구축하기 위해 사용했습니다.",
+          content:
+            "서버를 구축하기 위해 사용했습니다. 자바스크립트로도 서버개발을 할 수 있는게 큰 장점입니다.",
           isOpen: false,
         },
         {
           id: 3,
           title: "express.js",
-          content: "Node.js와 더불어 router를 통해 구조를 만들었습니다.",
+          content:
+            "Node.js와 호환이 되며, 여러 미들웨어를 사용하기 위해 사용했습니다. 특히 사용한 주된 이유가 ejs를 사용하기 편하고 routing이 편해서입니다.",
           isOpen: false,
         },
         {
@@ -310,13 +312,15 @@ export default {
         {
           id: 2,
           title: "Node.js",
-          content: "서버를 구축하기 위해 사용했습니다.",
+          content:
+            "서버를 구축하기 위해 사용했습니다. 자바스크립트로도 서버개발을 할 수 있는게 큰 장점입니다.",
           isOpen: false,
         },
         {
           id: 3,
           title: "express.js",
-          content: "Node.js와 더불어 router를 통해 구조를 만들었습니다.",
+          content:
+            "Node.js와 호환이 되며, 여러 미들웨어를 사용하기 위해 사용했습니다. 특히 사용한 주된 이유가 ejs를 사용하기 편하고 routing이 편해서입니다.",
           isOpen: false,
         },
         {
@@ -370,6 +374,111 @@ export default {
         },
       ],
       animation,
+      project1: {
+        title: "KB저축은행",
+        projectIntro:
+          "기존의 KB저축은행 사이트를 재해석하여 리뉴얼한 사이트입니다.",
+        projectMainFs: [
+          "로그인, 회원가입",
+          "간단한 금융계산기, 계좌조회",
+          "공지사항 작성 및 수정과 삭제",
+          "카드 신청 및 조회와 상품소개",
+        ],
+        mySections: [
+          "로그인 및 회원가입",
+          "메인페이지 일부분 디자인 및 전체적인 스와이퍼효과",
+          "금융계산기, 계좌조회 페이지",
+        ],
+        clarifications: [
+          "메인 페이지의 스크롤 효과는 스와이퍼를 이용해 구현했습니다.",
+          "또한 계좌조회나 카드신청 기능을 넣기 위해 회원가입시 계좌번호 역시 만들어지게 설계했습니다.",
+          "회원가입시 아이디 중복체크 기능을 넣었고 주소는 카카오에서 제공하는 API를 사용했고 가입된 회원정보는 mySQL 테이블에 저장됩니다.",
+          "mySQL에 담긴 데이터들과 함께 배포하기위해 aws를 이용했습니다.",
+        ],
+        developStorys: [
+          "교육과정 중 진행한 처음이자 마지막인 팀프로젝트 입니다. 약 두달간 진행된 프로젝트이며 시간을 쪼개 다른 개인프로젝트와 병행하면서 제작했습니다.",
+          "아무래도 다른 팀원과 처음으로 진행한 프로젝트다 보니 의견조율과 소통이 어색했고 그 과정에서 시간을 많이 사용했습니다.",
+          "하지만 꾸준히 대화를 하고 의견조율에 신경을 많이써서 촉박한 시간이였지만 끝내 마무리 지을수 있었습니다.",
+          "또한 깃허브의 사용법을 아예 몰랐었지만 이 프로젝트를 진행함으로써 사용법을 알 수 있는 경험이었습니다.",
+        ],
+        improves: [
+          "사실 거의 모든 은행페이지들은 보안프로그램이 필수라 봐도 되지만 그 기능은 제외하고 구현했습니다.",
+          "그렇다 보니 타 은행페이지들과 느낌이 많이 다른 페이지가 되었습니다.",
+          "회원가입에 아이디 중복체크를 구현하기 위해 회원가입 페이지에서 모든 회원들의 아이디 정보를 가져오게 됐는데 이는 보안상 매우매우 취약해질뿐만 아니라 회원정보의 데이터가 많아 질시 로딩이 느려질 수 있습니다.",
+          "로그인기능이 있지만 로그인이 된 상태에서만의 기능은 따로 없습니다.",
+        ],
+        projectMockup: true,
+      },
+      project2: {
+        title: "아리랑시네센터",
+        projectIntro:
+          "기존의 아리랑시네센터 사이트를 재해석하여 리뉴얼한 사이트입니다.",
+        projectMainFs: [
+          "로그인, 회원가입",
+          "네이버 영화정보 API를 이용한 영화검색",
+          "공지사항 작성 및 수정과 삭제",
+        ],
+        clarifications: [
+          "회원가입시 아이디 중복체크 기능을 넣었고 주소는 카카오에서 제공하는 API를 사용했고 가입된 회원정보는 mySQL 테이블에 저장됩니다.",
+          "로그인시 네이버로그인이 가능하게 구현했습니다.",
+          "로그인정보가 유지되게 세션을 사용했고 유효기간도 설정해두어 시간이 지나면 자동으로 로그아웃됩니다.",
+          "네이버 검색 API중 영화정보가 담겨있는 API를 가져와 검색기능을 만들었습니다.",
+          "mySQL에 담긴 데이터들과 함께 배포하기위해 aws를 이용했습니다.",
+        ],
+        developStorys: [
+          "교육과정 중 진행한 개인프로젝트 입니다. 평소 제작해보고 싶었던 사이트라서 제작하였습니다.",
+          "이 프로젝트를 진행하면서 전반적인 자바스크립트의 역량을 올릴 수 있었습니다.",
+          "API를 처음 알고, 처음 사용하게 된 프로젝트라서 JSON파일을 불러오는 과정에서 많은 고민을 했고, 이는 Node.js의 request 기능을 이용하여 원하는 정보들을 불러올 수 있었습니다.",
+          "네이버 로그인을 연동하는 과정에서 로그인이 유지되지 않는 문제에 봉착했었는데 세션에 대한 개념을 알게되어 express-session을 통해 API의 access_token을 불러와 세션에 저장하여 로그인기능을 마무리 지었습니다.",
+        ],
+        improves: [
+          "회원가입에 아이디 중복체크를 구현하기 위해 회원가입 페이지에서 모든 회원들의 아이디 정보를 가져오게 됐는데 이는 보안상 매우매우 취약해질뿐만 아니라 회원정보의 데이터가 많아 질시 로딩이 느려질 수 있습니다.",
+          "로그인기능이 있지만 로그인이 된 상태에서만의 기능은 따로 없습니다.",
+          "localhost에선 문제가 없었지만 aws에서 배포한 사이트에서는 네이버 영화정보의 링크가 오류가 났습니다. 에러 코드는 500으로 네이버 개발자포럼에 문의를 한 상태입니다.",
+        ],
+        projectMockup: true,
+      },
+      project3: {
+        title: "서문시장 야시장",
+        projectIntro:
+          "기존의 서문시장 야시장 사이트를 재해석하여 리뉴얼한 사이트입니다.",
+        projectMainFs: ["로그인, 회원가입", "공지사항 작성 및 수정과 삭제"],
+        clarifications: [
+          "회원가입시 아이디 중복체크 기능을 넣었고 주소는 카카오에서 제공하는 API를 사용했고 가입된 회원정보는 mySQL 테이블에 저장됩니다.",
+          "mySQL에 담긴 데이터들과 함께 배포하기위해 aws를 이용했습니다.",
+        ],
+        developStorys: [
+          "교육과정 중 진행한 첫번째 개인프로젝트 입니다.",
+          "마크업 언어의 역량을 끌어 올리고자, 기능보단 디자인에 중점을 두고 제작했습니다.",
+          "사이트의 컨셉에 맞춰 야시장 느낌이 나게 연출했습니다.",
+          "swiper를 적극 활용하여 시각적인 효과를 주었습니다.",
+        ],
+        improves: [
+          "회원가입에 아이디 중복체크를 구현하기 위해 회원가입 페이지에서 모든 회원들의 아이디 정보를 가져오게 됐는데 이는 보안상 매우매우 취약해질뿐만 아니라 회원정보의 데이터가 많아 질시 로딩이 느려질 수 있습니다.",
+          "로그인기능이 있지만 로그인이 된 상태에서만의 기능은 따로 없습니다.",
+          "메인페이지의 fade효과는 일일히 scroll높이에 따라 줬다 보니 정확도가 많이 떨어집니다. 이는 IntersectionObserver 함수를 활용하여 정확도를 높일 수 있습니다.",
+          "메인페이지에 이미지가 많아, 사이트 로딩이 오래 걸리는 편입니다. 전반적인 리소스 절감 조치가 필요해 보입니다.",
+        ],
+        projectMockup: true,
+      },
+      project4: {
+        title: "포토폴리오",
+        projectIntro: "저 자신을 소개하는 포토폴리오 페이지입니다.",
+        projectMainFs: [
+          "깔끔한 디자인으로 저 자신을 소개",
+          "Vue.js를 활용한 빠른 데이터 불러오기",
+        ],
+        developStorys: [
+          "포트폴리오 웹페이지다 보니 기능보다는 시각적인 효과를 중점에 두고 만들었습니다.",
+          "Vue.js를 사용해 개발하였으며 Vue에 대한 이해와 역량을 쌓을 수 있었습니다.",
+          "왼쪽 scrollSpy 기능을 구현하기위해 IntersectionObserver 함수를 사용했습니다.",
+          "움직이는 github 아이콘은 'vue3-lottie'라는 라이브러리를 활용해 넣었습니다.",
+        ],
+        improves: [
+          "복잡한 데이터 상태를 더 쉽게 관리하고 유지할수 있고 성능을 더욱 더 향상 시킬수 있게 Vuex가 필요해 보입니다.",
+        ],
+        projectMockup: true,
+      },
     };
   },
   methods: {
@@ -394,6 +503,10 @@ export default {
         }
       });
     },
+
+    emitEvent(data) {
+      this.$emit("openMockup", data);
+    },
   },
 };
 </script>
@@ -415,8 +528,8 @@ export default {
 }
 
 .githubIcon {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   margin: 0;
 }
 
@@ -424,6 +537,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .projectImg {
   width: 700px;
@@ -431,6 +545,12 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  cursor: pointer;
+  transition: transform ease 0.5s;
+}
+
+.projectImg:hover {
+  transform: scale(1.05);
 }
 .introduction-projects {
   display: flex;
@@ -552,16 +672,16 @@ export default {
     height: 100%;
     padding-top: 50%;
   }
-
-  .githubIcon {
-    width: 50px;
-    height: 50px;
-  }
 }
 
 @media (max-width: 600px) {
   #project {
     row-gap: 55px;
+  }
+
+  .githubIcon {
+    width: 50px;
+    height: 50px;
   }
 
   .tech-content.open {
