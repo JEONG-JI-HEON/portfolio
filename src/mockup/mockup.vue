@@ -96,6 +96,22 @@ export default {
 };
 </script>
 <style scoped>
+.mockupPageP::-webkit-scrollbar,
+.mockupPageC::-webkit-scrollbar {
+  width: 16px;
+}
+.mockupPageP::-webkit-scrollbar-track,
+.mockupPageC::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+.mockupPageP::-webkit-scrollbar-thumb,
+.mockupPageC::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 70px;
+}
+
 .backBg {
   width: 100%;
   height: 100%;

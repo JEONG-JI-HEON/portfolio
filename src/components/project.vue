@@ -341,7 +341,7 @@ export default {
       Porttechs: [
         {
           id: 1,
-          title: "HTML5, CSS, JavaScript, jQuery",
+          title: "HTML5, CSS, JavaScript",
           content:
             "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
           isOpen: false,
@@ -420,7 +420,7 @@ export default {
         ],
         clarifications: [
           "회원가입시 아이디 중복체크 기능을 넣었고 주소는 카카오에서 제공하는 API를 사용했고 가입된 회원정보는 mySQL 테이블에 저장됩니다.",
-          "로그인시 네이버로그인이 가능하게 구현했습니다.",
+          "로그인 시 네이버 로그인이 가능하게 구현했습니다.",
           "로그인정보가 유지되게 세션을 사용했고 유효기간도 설정해두어 시간이 지나면 자동으로 로그아웃됩니다.",
           "네이버 검색 API중 영화정보가 담겨있는 API를 가져와 검색기능을 만들었습니다.",
           "mySQL에 담긴 데이터들과 함께 배포하기위해 aws를 이용했습니다.",
