@@ -14,8 +14,10 @@
         </li>
       </ul>
       <div class="bottomContainer">
-        <a href="">wlgjs0804@naver.com</a>
-        <p>Last update: 2023/01/19</p>
+        <a href="mailto:wlgjs0804@naver.com" class="myMail"
+          >wlgjs0804@naver.com</a
+        >
+        <p>Last update: 2023/02/02</p>
       </div>
     </div>
     <div class="right-intro">
@@ -111,6 +113,9 @@ export default {
   justify-content: center;
 }
 
+.myMail:hover {
+  color: #b8b8b8;
+}
 .bottomContainer > p {
   color: rgba(255, 255, 255, 0.7);
 }

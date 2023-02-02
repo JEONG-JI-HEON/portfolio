@@ -37,7 +37,10 @@
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
-            그 밖에 자세한 사항은 이미지 클릭하여 참조
+            그 밖에 자세한 사항은 이미지
+            <span class="explainUnder titlehover" @click="emitEvent(project1)"
+              >클릭</span
+            >하여 참조
           </div>
         </div>
       </article>
@@ -108,7 +111,10 @@
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
-            그 밖에 자세한 사항은 이미지 클릭하여 참조
+            그 밖에 자세한 사항은 이미지
+            <span class="explainUnder titlehover" @click="emitEvent(project2)"
+              >클릭</span
+            >하여 참조
           </div>
         </div>
       </article>
@@ -168,7 +174,10 @@
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
-            그 밖에 자세한 사항은 이미지 클릭하여 참조
+            그 밖에 자세한 사항은 이미지
+            <span class="explainUnder titlehover" @click="emitEvent(project3)"
+              >클릭</span
+            >하여 참조
           </div>
         </div>
       </article>
@@ -218,7 +227,10 @@
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
-            그 밖에 자세한 사항은 이미지 클릭하여 참조
+            그 밖에 자세한 사항은 이미지
+            <span class="explainUnder titlehover" @click="emitEvent(project4)"
+              >클릭</span
+            >하여 참조
           </div>
         </div>
       </article>
@@ -587,6 +599,12 @@ export default {
 
 .portfolio {
   background-image: url(../../public/img/portfolio.PNG);
+}
+
+.explainUnder {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .tech-accordion {
