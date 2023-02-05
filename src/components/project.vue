@@ -259,6 +259,67 @@
         </div>
       </article>
     </article>
+    <article id="persProject4" class="introduction observed">
+      <div class="titleWithGithub">
+        <h2>
+          <a href="https://baseball-game-orcin.vercel.app/" class="titlehover"
+            >숫자 야구 게임</a
+          >
+        </h2>
+        <a href="https://github.com/JEONG-JI-HEON/baseballGame"
+          ><Vue3Lottie :animationData="animation" class="githubIcon"
+        /></a>
+      </div>
+      <span class="explainDate">2023년 2월 ~</span>
+      <div class="projectImg-wrap">
+        <div class="projectImg baseball" @click="emitEvent(project5)"></div>
+      </div>
+      <article class="introduction-projects">
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">React의 역량을 끌어올리기 위해 개발</div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">
+            서로 다른 숫자 4자리를 추측해나가며 맞추는 웹 게임
+          </div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">
+            그 밖에 자세한 사항은 이미지
+            <span class="explainUnder titlehover" @click="emitEvent(project5)"
+              >클릭</span
+            >하여 참조
+          </div>
+        </div>
+      </article>
+      <article class="useTech">
+        <h3 class="explain">
+          <div class="techImg"></div>
+          사용기술들
+        </h3>
+        <div
+          v-for="tech in Baseballtechs"
+          :key="tech.id"
+          class="tech-accordion"
+          v-bind:class="{ open: tech.isOpen }"
+        >
+          <div
+            @click="BasetoggleAccordion(tech.id)"
+            class="tech-title"
+            v-bind:class="{ open: tech.isOpen }"
+          >
+            {{ tech.title }}
+            <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
+          </div>
+          <div class="tech-content" v-bind:class="{ open: tech.isOpen }">
+            {{ tech.content }}
+          </div>
+        </div>
+      </article>
+    </article>
   </article>
 </template>
 
@@ -385,6 +446,41 @@ export default {
           isOpen: false,
         },
       ],
+      Baseballtechs: [
+        {
+          id: 1,
+          title: "React",
+          content:
+            "UI 개발에 집중할 수 있습니다. 컴포넌트를 이용해서 재사용 가능하고, 논리적으로 파일을 나누어서 개발 진행을 할 수 있습니다. 또한 JSX 문법을 이용해서 조금 더 직관적으로 템플릿을 구성할 수 있어서 사용했습니다.",
+          isOpen: false,
+        },
+        {
+          id: 2,
+          title: "Node.js",
+          content: "react.js를 위해 사용했습니다.",
+          isOpen: false,
+        },
+        {
+          id: 3,
+          title: "lottie-react",
+          content: "로딩 이미지, 목숨 이미지를 불러오기 위해 사용했습니다.",
+          isOpen: false,
+        },
+        {
+          id: 4,
+          title: "Prettier",
+          content:
+            "프로젝트 코드의 통일화를 위해 사용했습니다. 따옴표와 쌍 따옴표의 통일, 한 줄에 몇 자 이상시 자동 줄바꿈 등 코드의 일관성을 지킬 수 있습니다.",
+          isOpen: false,
+        },
+        {
+          id: 5,
+          title: "Vercel",
+          content:
+            "깃허브 주소만 입력하면 바로 배포가 됩니다. CI/CD가 자동으로 구현되어 있어서 메인 브랜치에 merge, commit 됐을 때, 혹은 메인이 아닌 브랜치에서 merge, commit 시에 preview deployment를 제공하여 오류가 나는지 확인해줍니다. 또한 내부적으로 CI 파이프라인에서 에러가 나거나, 사용하지 않는 변수와 같은 실수들에 에러를 내뱉어 배포가 된 이후에 에러가 나는 것을 방지할 수 있습니다.",
+          isOpen: false,
+        },
+      ],
       animation,
       project1: {
         title: "KB저축은행",
@@ -491,6 +587,25 @@ export default {
         ],
         projectMockup: true,
       },
+      project5: {
+        title: "숫자 야구 게임",
+        projectIntro: "서로 다른 숫자 4자리를 맞추는 게임입니다.",
+        projectMainFs: [
+          "게임 시작 버튼을 누를시 랜덤으로 서로 다른 숫자 4자리를 생성",
+          "React.js를 활용한 새로고침 없이 데이터 초기화",
+        ],
+        developStorys: [
+          "React로 진행한 첫번째 프로젝트 입니다.",
+          "React를 사용해 개발하였으며 React에 대한 이해와 역량을 쌓을 수 있었습니다.",
+          "움직이는 로딩 이미지와 목숨 아이콘들은 'lottie-react'라는 라이브러리를 활용해 넣었습니다.",
+          "배포는 Vercel에서 진행했으며 Next.JS를 만든 곳에서 만든 배포 시스템입니다. 깃허브 주소만 있다면 쉽게 배포할 수 있고 무료이기 때문에 선택하게 되었습니다.",
+        ],
+        improves: [
+          "디자인이 너무 단순해 부가적인 이미지들을 추후 추가할 예정입니다.",
+          "순위나 기록을 볼수 있는 페이지를 만들어 좀 더 게임 스럽게 할 필요가 보입니다.",
+        ],
+        projectMockup: true,
+      },
     };
   },
   methods: {
@@ -510,6 +625,13 @@ export default {
     },
     PorttoggleAccordion(id) {
       this.Porttechs.forEach((techs) => {
+        if (techs.id === id) {
+          techs.isOpen = !techs.isOpen;
+        }
+      });
+    },
+    BasetoggleAccordion(id) {
+      this.Baseballtechs.forEach((techs) => {
         if (techs.id === id) {
           techs.isOpen = !techs.isOpen;
         }
@@ -549,7 +671,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .projectImg {
   width: 700px;
@@ -559,6 +681,7 @@ export default {
   background-size: 100% 100%;
   cursor: pointer;
   transition: transform ease 0.5s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .projectImg:hover {
@@ -599,6 +722,9 @@ export default {
 
 .portfolio {
   background-image: url(../../public/img/portfolio.PNG);
+}
+.baseball {
+  background-image: url(../../public/img/baseballGame.PNG);
 }
 
 .explainUnder {

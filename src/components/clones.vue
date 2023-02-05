@@ -82,7 +82,6 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 .cloneImg {
   width: 700px;
@@ -92,6 +91,7 @@ export default {
   background-size: 100% 100%;
   cursor: pointer;
   transition: transform ease 0.5s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .cloneImg:hover {

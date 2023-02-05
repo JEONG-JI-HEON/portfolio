@@ -58,10 +58,11 @@
         <div class="skillIcons">
           <div class="skillImg" id="expressI"></div>
           <div class="skillImg" id="vueI"></div>
+          <div class="skillImg" id="reactI"></div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">express.js, Vue.js</div>
+          <div class="explainTxt">express.js, Vue.js, React.js</div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
@@ -139,6 +140,7 @@ export default {
 
 .skillIcons {
   display: flex;
+  column-gap: 10px;
 }
 
 .skillImg {
@@ -171,6 +173,10 @@ export default {
 
 #vueI {
   background-image: url(../../public/img/vue.png);
+}
+
+#reactI {
+  background-image: url(../../public/img/react.png);
 }
 
 #nodeI {

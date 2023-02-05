@@ -45,6 +45,15 @@
           <div class="miniCircle"></div>
           {{ scrollS.content4 }}
         </li>
+        <li
+          v-if="scrollS.content5"
+          class="scrollCon scrollNav"
+          @click="goSection"
+          v-bind:data-target="scrollS.content5Id"
+        >
+          <div class="miniCircle"></div>
+          {{ scrollS.content5 }}
+        </li>
       </ul>
     </div>
   </div>
@@ -134,6 +143,8 @@ export default {
         content3Id: "persProject2",
         content4: "포토폴리오 (개인)",
         content4Id: "persProject3",
+        content5: "숫자야구 게임 (개인)",
+        content5Id: "persProject4",
       },
       {
         title: "Clones",
