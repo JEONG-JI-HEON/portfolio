@@ -10,6 +10,7 @@
         <a
           href="https://jeong-ji-heon.github.io/dosiktong/index_1.html"
           class="titlehover"
+          target="_blank"
           >도시락통</a
         >
       </h2>
@@ -22,6 +23,7 @@
         <a
           href="https://jeong-ji-heon.github.io/shouse.garden/index_2.html"
           class="titlehover"
+          target="_blank"
           >싱그러운집</a
         >
       </h2>
@@ -34,6 +36,7 @@
         <a
           href="https://jeong-ji-heon.github.io/therichmond/index_1.html"
           class="titlehover"
+          target="_blank"
           >더 리치먼드</a
         >
       </h2>

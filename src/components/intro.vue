@@ -14,10 +14,10 @@
         </li>
       </ul>
       <div class="bottomContainer">
-        <a href="mailto:wlgjs0804@naver.com" class="myMail"
+        <a href="mailto:wlgjs0804@naver.com" class="myMail" target="_blank"
           >wlgjs0804@naver.com</a
         >
-        <p>Last update: 2023/02/02</p>
+        <p>Last update: 2023/02/05</p>
       </div>
     </div>
     <div class="right-intro">

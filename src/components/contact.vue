@@ -22,6 +22,9 @@
             <div class="arrow" v-bind:class="{ open: contact.isOpen }"></div>
           </div>
           <div class="contact-content" v-bind:class="{ open: contact.isOpen }">
+            {{ contact.name }}
+          </div>
+          <div class="contact-content" v-bind:class="{ open: contact.isOpen }">
             <div class="call-icon"></div>
             {{ contact.content1 }}
           </div>
@@ -48,6 +51,7 @@ export default {
       contact: [
         {
           id: 1,
+          name: "정지헌",
           title: "연락처",
           content1: "010-5052-0397",
           content2: "wlgjs0804@naver.com",

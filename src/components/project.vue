@@ -11,10 +11,11 @@
           <a
             href="http://kbsaving-env.eba-rinmdekn.ap-northeast-2.elasticbeanstalk.com/"
             class="titlehover"
+            target="_blank"
             >KB저축은행</a
           >
         </h2>
-        <a href="https://github.com/JEONG-JI-HEON/kbbank"
+        <a href="https://github.com/JEONG-JI-HEON/kbbank" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
@@ -76,10 +77,11 @@
           <a
             href="http://arirang-env.eba-6msdgjyc.ap-northeast-2.elasticbeanstalk.com/"
             class="titlehover"
+            target="_blank"
             >아리랑시네센터</a
           >
         </h2>
-        <a href="https://github.com/JEONG-JI-HEON/arirang"
+        <a href="https://github.com/JEONG-JI-HEON/arirang" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
@@ -149,10 +151,11 @@
           <a
             href="http://seomoonmarket-env.eba-dumip8jh.ap-northeast-2.elasticbeanstalk.com/"
             class="titlehover"
+            target="_blank"
             >서문시장</a
           >
         </h2>
-        <a href="https://github.com/JEONG-JI-HEON/seomoonmarket"
+        <a href="https://github.com/JEONG-JI-HEON/seomoonmarket" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
@@ -209,9 +212,11 @@
     <article id="persProject3" class="introduction observed">
       <div class="titleWithGithub">
         <h2>
-          <a href="/" class="titlehover">개인 포토폴리오 개발 (현재페이지)</a>
+          <a href="/" class="titlehover" target="_blank"
+            >개인 포토폴리오 개발 (현재페이지)</a
+          >
         </h2>
-        <a href="https://github.com/JEONG-JI-HEON/portfolio"
+        <a href="https://github.com/JEONG-JI-HEON/portfolio" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
@@ -262,11 +267,14 @@
     <article id="persProject4" class="introduction observed">
       <div class="titleWithGithub">
         <h2>
-          <a href="https://baseball-game-orcin.vercel.app/" class="titlehover"
+          <a
+            href="https://baseball-game-orcin.vercel.app/"
+            class="titlehover"
+            target="_blank"
             >숫자 야구 게임</a
           >
         </h2>
-        <a href="https://github.com/JEONG-JI-HEON/baseballGame"
+        <a href="https://github.com/JEONG-JI-HEON/baseballGame" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>

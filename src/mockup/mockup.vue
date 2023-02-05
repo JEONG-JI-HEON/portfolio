@@ -1,5 +1,9 @@
 <template>
-  <div class="backBg" v-if="data.projectMockup == true">
+  <div
+    class="backBg"
+    @click="handleBackBgClick"
+    v-if="data.projectMockup == true"
+  >
     <div class="mockupPageP">
       <div class="exitBtn" @click="emitClose">
         <div></div>
@@ -68,7 +72,7 @@
       </article>
     </div>
   </div>
-  <div class="backBg" v-else>
+  <div class="backBg" @click="handleBackBgClick" v-else>
     <div class="mockupPageC">
       <div class="exitBtn" @click="emitClose">
         <div></div>
@@ -91,6 +95,15 @@ export default {
   methods: {
     emitClose() {
       this.$emit("close");
+    },
+    /** 목업 밖에 회색부분 눌렀을시 목업창 닫게하는 함수 */
+    handleBackBgClick(event) {
+      if (!event.target.closest(".mockupPageP")) {
+        this.emitClose();
+      }
+      if (!event.target.closest(".mockupPageC")) {
+        this.emitClose();
+      }
     },
   },
 };
