@@ -453,6 +453,13 @@ export default {
             "프로젝트 코드의 통일화를 위해 사용했습니다. 따옴표와 쌍 따옴표의 통일, 한 줄에 몇 자 이상시 자동 줄바꿈 등 코드의 일관성을 지킬 수 있습니다.",
           isOpen: false,
         },
+        {
+          id: 6,
+          title: "Firebase",
+          content:
+            "구글의 배포 시스템인 firebase를 사용했습니다. 비교적 쉬운 절차와 무료인 시스템인 것이 장점입니다.",
+          isOpen: false,
+        },
       ],
       Baseballtechs: [
         {
@@ -584,6 +591,9 @@ export default {
           "깔끔한 디자인으로 저 자신을 소개",
           "Vue.js를 활용한 빠른 데이터 불러오기",
         ],
+        clarifications: [
+          "별다른 데이터가 없기에, 비교적 쉽고 빠르게 배포할 수 있는 Firebase를 이용했습니다.",
+        ],
         developStorys: [
           "포트폴리오 웹페이지다 보니 기능보다는 시각적인 효과를 중점에 두고 만들었습니다.",
           "Vue.js를 사용해 개발하였으며 Vue에 대한 이해와 역량을 쌓을 수 있었습니다.",
@@ -601,6 +611,9 @@ export default {
         projectMainFs: [
           "게임 시작 버튼을 누를시 랜덤으로 서로 다른 숫자 4자리를 생성",
           "React.js를 활용한 새로고침 없이 데이터 초기화",
+        ],
+        clarifications: [
+          "React의 Next.js를 만든 Vercel를 이용하여 배포하였습니다.",
         ],
         developStorys: [
           "React로 진행한 첫번째 프로젝트 입니다.",
