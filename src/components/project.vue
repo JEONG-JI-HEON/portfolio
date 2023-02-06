@@ -213,7 +213,7 @@
       <div class="titleWithGithub">
         <h2>
           <a href="/" class="titlehover" target="_blank"
-            >개인 포토폴리오 개발 (현재페이지)</a
+            >개인 포트폴리오 개발 (현재페이지)</a
           >
         </h2>
         <a href="https://github.com/JEONG-JI-HEON/portfolio" target="_blank"
@@ -227,7 +227,7 @@
       <article class="introduction-projects">
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">나만의 포토폴리오를 가지기 위해 개발</div>
+          <div class="explainTxt">나만의 포트폴리오를 가지기 위해 개발</div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
