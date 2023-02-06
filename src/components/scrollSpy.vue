@@ -141,7 +141,7 @@ export default {
         content2Id: "persProject1",
         content3: "서문시장 (개인)",
         content3Id: "persProject2",
-        content4: "포토폴리오 (개인)",
+        content4: "포트폴리오 (개인)",
         content4Id: "persProject3",
         content5: "숫자야구 게임 (개인)",
         content5Id: "persProject4",
