@@ -100,7 +100,7 @@ export default {
         }
       });
     }, option1);
-    
+
     // 화면 투명도를 위한 함수
     this.observer2 = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

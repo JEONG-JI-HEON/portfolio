@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="backBg"
-    @click="handleBackBgClick1"
-    v-if="data.projectMockup == true"
-  >
+  <div class="backBg" @click="handleBackBgClick1" v-if="data.projectMockup == true">
     <div class="mockupPageP">
       <div class="exitBtn" @click="emitClose">
         <div></div>
@@ -24,42 +20,26 @@
         </div>
         <article class="mock-mainF">
           <h4>페이지의 주요기능</h4>
-          <div
-            class="explain"
-            v-for="projectMain in data.projectMainFs"
-            :key="projectMain"
-          >
+          <div class="explain" v-for="projectMain in data.projectMainFs" :key="projectMain">
             <div class="checkIcon"></div>
             <div class="explainTxt-mock">{{ projectMain }}</div>
           </div>
         </article>
         <article class="mock-mySection" v-if="data.mySections">
           <h4>프로젝트에서 맡은 부분</h4>
-          <div
-            class="explain"
-            v-for="mySection in data.mySections"
-            :key="mySection"
-          >
+          <div class="explain" v-for="mySection in data.mySections" :key="mySection">
             <div class="checkIcon"></div>
             <div class="explainTxt-mock">{{ mySection }}</div>
           </div>
         </article>
         <article class="mock-clarification">
-          <div
-            class="explain"
-            v-for="clarification in data.clarifications"
-            :key="clarification"
-          >
+          <div class="explain" v-for="clarification in data.clarifications" :key="clarification">
             <div class="explainTxt-mock">{{ clarification }}</div>
           </div>
         </article>
         <article class="mock-developStory">
           <h4>개발 비화</h4>
-          <div
-            class="explain"
-            v-for="developStory in data.developStorys"
-            :key="developStory"
-          >
+          <div class="explain" v-for="developStory in data.developStorys" :key="developStory">
             <div class="explainTxt-mock">{{ developStory }}</div>
           </div>
         </article>
@@ -155,8 +135,7 @@ export default {
   z-index: 11;
   transform: translateY(-50%);
   background-color: white;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px, rgb(0 0 0 / 15%) 0px 8px 30px,
-    rgb(255 255 255 / 20%) 0px 0px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px, rgb(0 0 0 / 15%) 0px 8px 30px, rgb(255 255 255 / 20%) 0px 0px;
 }
 
 .mockupPageP img {
@@ -175,8 +154,7 @@ export default {
   z-index: 11;
   transform: translateY(-50%);
   background-color: white;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px, rgb(0 0 0 / 15%) 0px 8px 30px,
-    rgb(255 255 255 / 20%) 0px 0px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px, rgb(0 0 0 / 15%) 0px 8px 30px, rgb(255 255 255 / 20%) 0px 0px;
 }
 
 .mockupPageC img {

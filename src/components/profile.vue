@@ -19,10 +19,10 @@
           <div class="checkIcon"></div>
           <div class="explainTxt">고려대학교 사범대학부속고등학교 졸업</div>
         </div>
-        <div class="explain">
+        <!-- <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">육군 병장 만기전역</div>
-        </div>
+        </div> -->
       </article>
       <article class="informationE">
         <span class="intro-subtitle">경험사항</span>
