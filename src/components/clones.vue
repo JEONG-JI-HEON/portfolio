@@ -7,12 +7,7 @@
     <article id="dosiraktong" class="introduction observed">
       <span id="cloning" class="intro-subtitle">클론 코딩</span>
       <h2>
-        <a
-          href="https://jeong-ji-heon.github.io/dosiktong/index_1.html"
-          class="titlehover"
-          target="_blank"
-          >도시락통</a
-        >
+        <a href="https://jeong-ji-heon.github.io/dosiktong/index_1.html" class="titlehover" target="_blank">도시락통</a>
       </h2>
       <div class="cloneImg-wrap">
         <div class="cloneImg dosiraktong" @click="emitEvent(clone1)"></div>
@@ -20,10 +15,7 @@
     </article>
     <article id="singrunzip" class="introduction observed">
       <h2>
-        <a
-          href="https://jeong-ji-heon.github.io/shouse.garden/index_2.html"
-          class="titlehover"
-          target="_blank"
+        <a href="https://jeong-ji-heon.github.io/shouse.garden/index_2.html" class="titlehover" target="_blank"
           >싱그러운집</a
         >
       </h2>
@@ -33,10 +25,7 @@
     </article>
     <article id="therichmond" class="introduction observed">
       <h2>
-        <a
-          href="https://jeong-ji-heon.github.io/therichmond/index_1.html"
-          class="titlehover"
-          target="_blank"
+        <a href="https://jeong-ji-heon.github.io/therichmond/index_1.html" class="titlehover" target="_blank"
           >더 리치먼드</a
         >
       </h2>

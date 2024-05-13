@@ -13,11 +13,7 @@
           class="contact-accordion"
           v-bind:class="{ open: contact.isOpen }"
         >
-          <div
-            @click="toggleAccordion(contact.id)"
-            class="contact-title"
-            v-bind:class="{ open: contact.isOpen }"
-          >
+          <div @click="toggleAccordion(contact.id)" class="contact-title" v-bind:class="{ open: contact.isOpen }">
             {{ contact.title }}
             <div class="arrow" v-bind:class="{ open: contact.isOpen }"></div>
           </div>
@@ -88,8 +84,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   transition: margin 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 
 .contact-accordion::before {
@@ -100,14 +95,12 @@ export default {
   content: "";
   opacity: 1;
   position: absolute;
-  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   background-color: rgba(0, 0, 0, 0.12);
 }
 
 .contact-accordion.open {
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 
 .contact-title {
@@ -145,8 +138,7 @@ export default {
   padding: 0px 16px;
   overflow: hidden;
   background-color: white;
-  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition-duration: 0.237s;
   display: flex;
   align-items: center;

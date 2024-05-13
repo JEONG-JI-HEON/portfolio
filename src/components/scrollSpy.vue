@@ -1,10 +1,6 @@
 <template>
   <div id="scrollSpy" class="scrollSpy">
-    <div
-      v-for="scrollS in scrollSpy"
-      :key="scrollS"
-      v-bind:class="scrollS.title"
-    >
+    <div v-for="scrollS in scrollSpy" :key="scrollS" v-bind:class="scrollS.title">
       <p class="spy-title scrollNav" v-bind:data-target="scrollS.titleId">
         {{ scrollS.title }}
       </p>
@@ -89,6 +85,7 @@ export default {
     };
     let articles = document.getElementsByClassName("observed");
     const scrollNav = document.querySelectorAll(".scrollNav");
+
     // scrollspy가 감지하기 위한 함수
     this.observer1 = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -103,6 +100,7 @@ export default {
         }
       });
     }, option1);
+    
     // 화면 투명도를 위한 함수
     this.observer2 = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

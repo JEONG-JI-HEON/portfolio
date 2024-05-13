@@ -31,17 +31,14 @@
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
-            로그인, 회원가입, 금융계산기, 계좌조회 및 메인페이지 디자인 일부분과
-            스크립트 담당
+            로그인, 회원가입, 금융계산기, 계좌조회 및 메인페이지 디자인 일부분과 스크립트 담당
           </div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
             그 밖에 자세한 사항은 이미지
-            <span class="explainUnder titlehover" @click="emitEvent(project1)"
-              >클릭</span
-            >하여 참조
+            <span class="explainUnder titlehover" @click="emitEvent(project1)">클릭</span>하여 참조
           </div>
         </div>
       </article>
@@ -50,17 +47,8 @@
           <div class="techImg"></div>
           사용기술들
         </h3>
-        <div
-          v-for="tech in KBArirangtechs"
-          :key="tech.id"
-          class="tech-accordion"
-          v-bind:class="{ open: tech.isOpen }"
-        >
-          <div
-            @click="KBAtoggleAccordion(tech.id)"
-            class="tech-title"
-            v-bind:class="{ open: tech.isOpen }"
-          >
+        <div v-for="tech in KBArirangtechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
+          <div @click="KBAtoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
             {{ tech.title }}
             <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
           </div>
@@ -100,23 +88,17 @@
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">
-            공지사항, 게시판 작성 및 로그인, 회원가입 기능 구현
-          </div>
+          <div class="explainTxt">공지사항, 게시판 작성 및 로그인, 회원가입 기능 구현</div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">
-            네이버 API를 이용하여 네이버 로그인, 영화 검색기능 구현
-          </div>
+          <div class="explainTxt">네이버 API를 이용하여 네이버 로그인, 영화 검색기능 구현</div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
             그 밖에 자세한 사항은 이미지
-            <span class="explainUnder titlehover" @click="emitEvent(project2)"
-              >클릭</span
-            >하여 참조
+            <span class="explainUnder titlehover" @click="emitEvent(project2)">클릭</span>하여 참조
           </div>
         </div>
       </article>
@@ -125,17 +107,8 @@
           <div class="techImg"></div>
           사용기술들
         </h3>
-        <div
-          v-for="tech in KBArirangtechs"
-          :key="tech.id"
-          class="tech-accordion"
-          v-bind:class="{ open: tech.isOpen }"
-        >
-          <div
-            @click="KBAtoggleAccordion(tech.id)"
-            class="tech-title"
-            v-bind:class="{ open: tech.isOpen }"
-          >
+        <div v-for="tech in KBArirangtechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
+          <div @click="KBAtoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
             {{ tech.title }}
             <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
           </div>
@@ -170,17 +143,13 @@
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">
-            공지사항, 게시판 작성 및 로그인, 회원가입 기능 구현
-          </div>
+          <div class="explainTxt">공지사항, 게시판 작성 및 로그인, 회원가입 기능 구현</div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
             그 밖에 자세한 사항은 이미지
-            <span class="explainUnder titlehover" @click="emitEvent(project3)"
-              >클릭</span
-            >하여 참조
+            <span class="explainUnder titlehover" @click="emitEvent(project3)">클릭</span>하여 참조
           </div>
         </div>
       </article>
@@ -189,17 +158,8 @@
           <div class="techImg"></div>
           사용기술들
         </h3>
-        <div
-          v-for="tech in Seomoontechs"
-          :key="tech.id"
-          class="tech-accordion"
-          v-bind:class="{ open: tech.isOpen }"
-        >
-          <div
-            @click="SeomoontoggleAccordion(tech.id)"
-            class="tech-title"
-            v-bind:class="{ open: tech.isOpen }"
-          >
+        <div v-for="tech in Seomoontechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
+          <div @click="SeomoontoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
             {{ tech.title }}
             <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
           </div>
@@ -212,9 +172,7 @@
     <article id="persProject3" class="introduction observed">
       <div class="titleWithGithub">
         <h2>
-          <a href="/" class="titlehover" target="_blank"
-            >개인 포트폴리오 개발 (현재페이지)</a
-          >
+          <a href="/" class="titlehover" target="_blank">개인 포트폴리오 개발 (현재페이지)</a>
         </h2>
         <a href="https://github.com/JEONG-JI-HEON/portfolio" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
@@ -233,9 +191,7 @@
           <div class="checkIcon"></div>
           <div class="explainTxt">
             그 밖에 자세한 사항은 이미지
-            <span class="explainUnder titlehover" @click="emitEvent(project4)"
-              >클릭</span
-            >하여 참조
+            <span class="explainUnder titlehover" @click="emitEvent(project4)">클릭</span>하여 참조
           </div>
         </div>
       </article>
@@ -244,17 +200,8 @@
           <div class="techImg"></div>
           사용기술들
         </h3>
-        <div
-          v-for="tech in Porttechs"
-          :key="tech.id"
-          class="tech-accordion"
-          v-bind:class="{ open: tech.isOpen }"
-        >
-          <div
-            @click="PorttoggleAccordion(tech.id)"
-            class="tech-title"
-            v-bind:class="{ open: tech.isOpen }"
-          >
+        <div v-for="tech in Porttechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
+          <div @click="PorttoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
             {{ tech.title }}
             <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
           </div>
@@ -267,12 +214,7 @@
     <article id="persProject4" class="introduction observed">
       <div class="titleWithGithub">
         <h2>
-          <a
-            href="https://baseball-game-orcin.vercel.app/"
-            class="titlehover"
-            target="_blank"
-            >숫자 야구 게임</a
-          >
+          <a href="https://baseball-game-orcin.vercel.app/" class="titlehover" target="_blank">숫자 야구 게임</a>
         </h2>
         <a href="https://github.com/JEONG-JI-HEON/baseballGame" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
@@ -289,17 +231,13 @@
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">
-            서로 다른 숫자 4자리를 추측해나가며 맞추는 웹 게임
-          </div>
+          <div class="explainTxt">서로 다른 숫자 4자리를 추측해나가며 맞추는 웹 게임</div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">
             그 밖에 자세한 사항은 이미지
-            <span class="explainUnder titlehover" @click="emitEvent(project5)"
-              >클릭</span
-            >하여 참조
+            <span class="explainUnder titlehover" @click="emitEvent(project5)">클릭</span>하여 참조
           </div>
         </div>
       </article>
@@ -308,17 +246,8 @@
           <div class="techImg"></div>
           사용기술들
         </h3>
-        <div
-          v-for="tech in Baseballtechs"
-          :key="tech.id"
-          class="tech-accordion"
-          v-bind:class="{ open: tech.isOpen }"
-        >
-          <div
-            @click="BasetoggleAccordion(tech.id)"
-            class="tech-title"
-            v-bind:class="{ open: tech.isOpen }"
-          >
+        <div v-for="tech in Baseballtechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
+          <div @click="BasetoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
             {{ tech.title }}
             <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
           </div>
@@ -349,15 +278,13 @@ export default {
         {
           id: 1,
           title: "HTML5, CSS, JavaScript, jQuery",
-          content:
-            "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
+          content: "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
           isOpen: false,
         },
         {
           id: 2,
           title: "Node.js",
-          content:
-            "서버를 구축하기 위해 사용했습니다. 자바스크립트로도 서버개발을 할 수 있는게 큰 장점입니다.",
+          content: "서버를 구축하기 위해 사용했습니다. 자바스크립트로도 서버개발을 할 수 있는게 큰 장점입니다.",
           isOpen: false,
         },
         {
@@ -370,8 +297,7 @@ export default {
         {
           id: 4,
           title: "mySQL",
-          content:
-            "회원정보, 공지사항, 사진게시판의 데이터를 저장해두기 위해 사용했습니다.",
+          content: "회원정보, 공지사항, 사진게시판의 데이터를 저장해두기 위해 사용했습니다.",
           isOpen: false,
         },
         {
@@ -386,15 +312,13 @@ export default {
         {
           id: 1,
           title: "HTML5, CSS, JavaScript",
-          content:
-            "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
+          content: "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
           isOpen: false,
         },
         {
           id: 2,
           title: "Node.js",
-          content:
-            "서버를 구축하기 위해 사용했습니다. 자바스크립트로도 서버개발을 할 수 있는게 큰 장점입니다.",
+          content: "서버를 구축하기 위해 사용했습니다. 자바스크립트로도 서버개발을 할 수 있는게 큰 장점입니다.",
           isOpen: false,
         },
         {
@@ -407,8 +331,7 @@ export default {
         {
           id: 4,
           title: "mySQL",
-          content:
-            "회원정보, 공지사항, 사진게시판의 데이터를 저장해두기 위해 사용했습니다.",
+          content: "회원정보, 공지사항, 사진게시판의 데이터를 저장해두기 위해 사용했습니다.",
           isOpen: false,
         },
         {
@@ -423,8 +346,7 @@ export default {
         {
           id: 1,
           title: "HTML5, CSS, JavaScript",
-          content:
-            "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
+          content: "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
           isOpen: false,
         },
         {
@@ -436,8 +358,7 @@ export default {
         {
           id: 3,
           title: "Vue.js",
-          content:
-            "Vue.js를 기반으로 포트폴리오를 제작했습니다. vue-cli를 이용해 프로젝트를 생성했습니다.",
+          content: "Vue.js를 기반으로 포트폴리오를 제작했습니다. vue-cli를 이용해 프로젝트를 생성했습니다.",
           isOpen: false,
         },
         {
@@ -456,8 +377,7 @@ export default {
         {
           id: 6,
           title: "Firebase",
-          content:
-            "구글의 배포 시스템인 firebase를 사용했습니다. 비교적 쉬운 절차와 무료인 시스템인 것이 장점입니다.",
+          content: "구글의 배포 시스템인 firebase를 사용했습니다. 비교적 쉬운 절차와 무료인 시스템인 것이 장점입니다.",
           isOpen: false,
         },
       ],
@@ -499,8 +419,7 @@ export default {
       animation,
       project1: {
         title: "KB저축은행",
-        projectIntro:
-          "기존의 KB저축은행 사이트를 재해석하여 리뉴얼한 사이트입니다.",
+        projectIntro: "기존의 KB저축은행 사이트를 재해석하여 리뉴얼한 사이트입니다.",
         projectMainFs: [
           "로그인, 회원가입",
           "간단한 금융계산기, 계좌조회",
@@ -534,13 +453,8 @@ export default {
       },
       project2: {
         title: "아리랑시네센터",
-        projectIntro:
-          "기존의 아리랑시네센터 사이트를 재해석하여 리뉴얼한 사이트입니다.",
-        projectMainFs: [
-          "로그인, 회원가입",
-          "네이버 영화정보 API를 이용한 영화검색",
-          "공지사항 작성 및 수정과 삭제",
-        ],
+        projectIntro: "기존의 아리랑시네센터 사이트를 재해석하여 리뉴얼한 사이트입니다.",
+        projectMainFs: ["로그인, 회원가입", "네이버 영화정보 API를 이용한 영화검색", "공지사항 작성 및 수정과 삭제"],
         clarifications: [
           "회원가입시 아이디 중복체크 기능을 넣었고 주소는 카카오에서 제공하는 API를 사용했고 가입된 회원정보는 mySQL 테이블에 저장됩니다.",
           "로그인 시 네이버 로그인이 가능하게 구현했습니다.",
@@ -563,8 +477,7 @@ export default {
       },
       project3: {
         title: "서문시장 야시장",
-        projectIntro:
-          "기존의 서문시장 야시장 사이트를 재해석하여 리뉴얼한 사이트입니다.",
+        projectIntro: "기존의 서문시장 야시장 사이트를 재해석하여 리뉴얼한 사이트입니다.",
         projectMainFs: ["로그인, 회원가입", "공지사항 작성 및 수정과 삭제"],
         clarifications: [
           "회원가입시 아이디 중복체크 기능을 넣었고 주소는 카카오에서 제공하는 API를 사용했고 가입된 회원정보는 mySQL 테이블에 저장됩니다.",
@@ -587,13 +500,8 @@ export default {
       project4: {
         title: "포트폴리오",
         projectIntro: "저 자신을 소개하는 포트폴리오 페이지입니다.",
-        projectMainFs: [
-          "깔끔한 디자인으로 저 자신을 소개",
-          "Vue.js를 활용한 빠른 데이터 불러오기",
-        ],
-        clarifications: [
-          "별다른 데이터가 없기에, 비교적 쉽고 빠르게 배포할 수 있는 Firebase를 이용했습니다.",
-        ],
+        projectMainFs: ["깔끔한 디자인으로 저 자신을 소개", "Vue.js를 활용한 빠른 데이터 불러오기"],
+        clarifications: ["별다른 데이터가 없기에, 비교적 쉽고 빠르게 배포할 수 있는 Firebase를 이용했습니다."],
         developStorys: [
           "포트폴리오 웹페이지다 보니 기능보다는 시각적인 효과를 중점에 두고 만들었습니다.",
           "Vue.js를 사용해 개발하였으며 Vue에 대한 이해와 역량을 쌓을 수 있었습니다.",
@@ -612,9 +520,7 @@ export default {
           "게임 시작 버튼을 누를시 랜덤으로 서로 다른 숫자 4자리를 생성",
           "React.js를 활용한 새로고침 없이 데이터 초기화",
         ],
-        clarifications: [
-          "React의 Next.js를 만든 Vercel를 이용하여 배포하였습니다.",
-        ],
+        clarifications: ["React의 Next.js를 만든 Vercel를 이용하여 배포하였습니다."],
         developStorys: [
           "React로 진행한 첫번째 프로젝트 입니다.",
           "React를 사용해 개발하였으며 React에 대한 이해와 역량을 쌓을 수 있었습니다.",
@@ -760,8 +666,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   transition: margin 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 
 .tech-accordion::before {
@@ -772,15 +677,13 @@ export default {
   content: "";
   opacity: 1;
   position: absolute;
-  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   background-color: rgba(0, 0, 0, 0.12);
 }
 
 .tech-accordion.open {
   margin: 16px 0;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 .tech-accordion.open:last-child {
   margin-bottom: 0;
@@ -821,8 +724,7 @@ export default {
   padding: 0px 16px;
   overflow: hidden;
   background-color: white;
-  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition-duration: 0.237s;
 }
 

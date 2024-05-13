@@ -26,17 +26,13 @@
       </article>
       <article class="informationE">
         <span class="intro-subtitle">경험사항</span>
-        <div class="explain">
+        <!-- <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">나이스 프렌즈 (2018.09 ~ 2019.05)</div>
-        </div>
+        </div> -->
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">제 20대 대통령 선거 투표사무원</div>
-        </div>
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">제 8회 전국동시지방선거 투표사무원</div>
+          <div class="explainTxt">인포인 재직중 (2023.03 ~ )</div>
         </div>
       </article>
     </article>
@@ -67,6 +63,19 @@
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">웹 프레임워크</div>
+        </div>
+      </article>
+      <article class="introduction-skills">
+        <div class="skillIcons">
+          <div class="skillImg" id="threeI"></div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">Three.js</div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">웹 3D 라이브러리</div>
         </div>
       </article>
       <article class="introduction-skills">
@@ -177,6 +186,10 @@ export default {
 
 #reactI {
   background-image: url(../../public/img/react.png);
+}
+
+#threeI {
+  background-image: url(../../public/img/three.png);
 }
 
 #nodeI {

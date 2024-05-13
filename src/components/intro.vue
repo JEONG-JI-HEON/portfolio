@@ -3,20 +3,14 @@
     <div class="left-intro">
       <ul class="linkContainer">
         <li>
-          <a href="https://github.com/JEONG-JI-HEON" class="coloringText"
-            >GitHub<span class="purplePoint">.</span>
-          </a>
+          <a href="https://github.com/JEONG-JI-HEON" class="coloringText">GitHub<span class="purplePoint">.</span> </a>
         </li>
         <li>
-          <a href="https://discord.gg/SFwmc34bS2" class="coloringText"
-            >Discord<span class="purplePoint">.</span>
-          </a>
+          <a href="https://discord.gg/SFwmc34bS2" class="coloringText">Discord<span class="purplePoint">.</span> </a>
         </li>
       </ul>
       <div class="bottomContainer">
-        <a href="mailto:wlgjs0804@naver.com" class="myMail" target="_blank"
-          >wlgjs0804@naver.com</a
-        >
+        <a href="mailto:wlgjs0804@naver.com" class="myMail" target="_blank">wlgjs0804@naver.com</a>
         <p>Last update: 2023/02/05</p>
       </div>
     </div>
