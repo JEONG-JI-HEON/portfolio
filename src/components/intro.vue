@@ -24,9 +24,9 @@
           <span>입니다.</span>
         </div>
         <div class="bottom-text">
-          <span>프론트엔드 개발자를 희망하고 있습니다.</span>
-          <span>항상 만족하지 않고 끊임없이 변화를 추구하려 합니다.</span>
-          <span>그렇기에 항상 배우는 자세를 잃지 않으려 합니다.</span>
+          <span>1년차 프론트엔드 & 3D 개발자로 일하고 있습니다.</span>
+          <span>저는 항상 만족하지 않고 끊임없이 변화를 추구하려 합니다.</span>
+          <span>그렇기에 수용하는 자세를 잃지 않으려 합니다.</span>
         </div>
         <div class="bottom-arrow"></div>
       </article>
