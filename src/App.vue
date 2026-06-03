@@ -48,7 +48,7 @@ export default {
     career,
     profile,
     project,
-    clones,
+    // clones,
     contact,
     MockupWindow,
   },

@@ -91,6 +91,19 @@
           <div class="explainTxt">데이터베이스</div>
         </div>
       </article>
+      <article class="introduction-skills">
+        <div class="skillIcons">
+          <div class="skillImg" id="awsI"></div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">AWS</div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">클라우드</div>
+        </div>
+      </article>
     </article>
   </article>
 </template>
@@ -181,6 +194,9 @@ export default {
 
 #mySQLI {
   background-image: url(../../public/img/mysql.png);
+}
+#awsI {
+  background-image: url(../../public/img/aws.png);
 }
 
 @media (max-width: 1200px) {

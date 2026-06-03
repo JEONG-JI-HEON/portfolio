@@ -4,16 +4,11 @@
       Project<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
-    <article id="teamProject" class="introduction observed">
+    <article id="project1" class="introduction observed">
       <!-- <span class="intro-subtitle">팀 프로젝트</span> -->
       <div class="titleWithGithub">
         <h2>
-          <a
-            href="http://sejong-env.eba-rinmdekn.ap-northeast-2.elasticbeanstalk.com/"
-            class="titlehover"
-            target="_blank"
-            >세종 커피로봇 관제 대시보드</a
-          >
+          <a href="http://13.125.173.106/" class="titlehover" target="_blank">세종 커피로봇 관제 대시보드</a>
         </h2>
         <a href="https://github.com/JEONG-JI-HEON/sejong_robot" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
@@ -24,6 +19,10 @@
         <div class="projectImg sejong" @click="emitEvent(project1)"></div>
       </div>
       <article class="introduction-projects">
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">ID: manager1 / PW: 1234</div>
+        </div>
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">백엔드 개발자 2인, 프론트엔드 개발자 1인 구성으로 프로젝트 진행</div>
@@ -46,7 +45,7 @@
           사용기술들
         </h3>
         <div v-for="tech in sejongTechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
-          <div @click="KBAtoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
+          <div @click="sejongToggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
             {{ tech.title }}
             <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
           </div>
@@ -56,40 +55,31 @@
         </div>
       </article>
     </article>
-    <article id="persProject1" class="introduction observed">
+    <article id="project2" class="introduction observed">
       <div class="titleWithGithub">
         <h2>
-          <a
-            href="http://arirang-env.eba-6msdgjyc.ap-northeast-2.elasticbeanstalk.com/"
-            class="titlehover"
-            target="_blank"
-            >아리랑시네센터</a
+          <a href="http://smc-env.eba-6msdgjyc.ap-northeast-2.elasticbeanstalk.com/" class="titlehover" target="_blank"
+            >삼성서울병원 e-러닝 플랫폼</a
           >
         </h2>
-        <a href="https://github.com/JEONG-JI-HEON/arirang" target="_blank"
+        <a href="https://github.com/JEONG-JI-HEON/kbsmc-admin" target="_blank"
           ><Vue3Lottie :animationData="animation" class="githubIcon"
         /></a>
       </div>
-      <span class="explainDate">2022년 10월 10일 ~ 2022년 12월 27일</span>
+      <span class="explainDate">2025년 10월 ~ 2026년 2월</span>
       <div class="projectImg-wrap">
-        <div class="projectImg arirnag" @click="emitEvent(project2)"></div>
+        <div class="projectImg smc" @click="emitEvent(project2)"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">영화 소개 및 검색 페이지</div>
+          <div class="explainTxt">
+            병원 관계자를 대상으로 교육 콘텐츠를 제공하고 수강 현황을 관리할 수 있는 모바일 웹 서비스 개발
+          </div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
-          <div class="explainTxt">기존의 아리랑시네센터 페이지를 리뉴얼</div>
-        </div>
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">공지사항, 게시판 작성 및 로그인, 회원가입 기능 구현</div>
-        </div>
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">네이버 API를 이용하여 네이버 로그인, 영화 검색기능 구현</div>
+          <div class="explainTxt">e-러닝 영상 업로드 및 수정삭제, 회원 정보 관리, 유저 영상 진도율 통계</div>
         </div>
         <div class="explain">
           <div class="checkIcon"></div>
@@ -104,8 +94,8 @@
           <div class="techImg"></div>
           사용기술들
         </h3>
-        <div v-for="tech in sejongTechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
-          <div @click="KBAtoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
+        <div v-for="tech in smcTechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
+          <div @click="smcToggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
             {{ tech.title }}
             <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
           </div>
@@ -115,58 +105,7 @@
         </div>
       </article>
     </article>
-    <article id="persProject2" class="introduction observed">
-      <div class="titleWithGithub">
-        <h2>
-          <a
-            href="http://seomoonmarket-env.eba-dumip8jh.ap-northeast-2.elasticbeanstalk.com/"
-            class="titlehover"
-            target="_blank"
-            >서문시장</a
-          >
-        </h2>
-        <a href="https://github.com/JEONG-JI-HEON/seomoonmarket" target="_blank"
-          ><Vue3Lottie :animationData="animation" class="githubIcon"
-        /></a>
-      </div>
-      <span class="explainDate">2022년 9월 10일 ~ 2022년 10월 7일</span>
-      <div class="projectImg-wrap">
-        <div class="projectImg seomoon" @click="emitEvent(project3)"></div>
-      </div>
-      <article class="introduction-projects">
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">기존의 서문시장야시장 페이지를 리뉴얼</div>
-        </div>
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">공지사항, 게시판 작성 및 로그인, 회원가입 기능 구현</div>
-        </div>
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">
-            그 밖에 자세한 사항은 이미지
-            <span class="explainUnder titlehover" @click="emitEvent(project3)">클릭</span>하여 참조
-          </div>
-        </div>
-      </article>
-      <article class="useTech">
-        <h3 class="explain">
-          <div class="techImg"></div>
-          사용기술들
-        </h3>
-        <div v-for="tech in Seomoontechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
-          <div @click="SeomoontoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
-            {{ tech.title }}
-            <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
-          </div>
-          <div class="tech-content" v-bind:class="{ open: tech.isOpen }">
-            {{ tech.content }}
-          </div>
-        </div>
-      </article>
-    </article>
-    <article id="persProject3" class="introduction observed">
+    <article id="project3" class="introduction observed">
       <div class="titleWithGithub">
         <h2>
           <a href="/" class="titlehover" target="_blank">개인 포트폴리오 개발 (현재페이지)</a>
@@ -197,54 +136,8 @@
           <div class="techImg"></div>
           사용기술들
         </h3>
-        <div v-for="tech in Porttechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
-          <div @click="PorttoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
-            {{ tech.title }}
-            <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
-          </div>
-          <div class="tech-content" v-bind:class="{ open: tech.isOpen }">
-            {{ tech.content }}
-          </div>
-        </div>
-      </article>
-    </article>
-    <article id="persProject4" class="introduction observed">
-      <div class="titleWithGithub">
-        <h2>
-          <a href="https://baseball-game-orcin.vercel.app/" class="titlehover" target="_blank">숫자 야구 게임</a>
-        </h2>
-        <a href="https://github.com/JEONG-JI-HEON/baseballGame" target="_blank"
-          ><Vue3Lottie :animationData="animation" class="githubIcon"
-        /></a>
-      </div>
-      <span class="explainDate">2023년 2월 ~</span>
-      <div class="projectImg-wrap">
-        <div class="projectImg baseball" @click="emitEvent(project5)"></div>
-      </div>
-      <article class="introduction-projects">
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">React의 역량을 끌어올리기 위해 개발</div>
-        </div>
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">서로 다른 숫자 4자리를 추측해나가며 맞추는 웹 게임</div>
-        </div>
-        <div class="explain">
-          <div class="checkIcon"></div>
-          <div class="explainTxt">
-            그 밖에 자세한 사항은 이미지
-            <span class="explainUnder titlehover" @click="emitEvent(project5)">클릭</span>하여 참조
-          </div>
-        </div>
-      </article>
-      <article class="useTech">
-        <h3 class="explain">
-          <div class="techImg"></div>
-          사용기술들
-        </h3>
-        <div v-for="tech in Baseballtechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
-          <div @click="BasetoggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
+        <div v-for="tech in portTechs" :key="tech.id" class="tech-accordion" v-bind:class="{ open: tech.isOpen }">
+          <div @click="portToggleAccordion(tech.id)" class="tech-title" v-bind:class="{ open: tech.isOpen }">
             {{ tech.title }}
             <div class="arrow" v-bind:class="{ open: tech.isOpen }"></div>
           </div>
@@ -313,41 +206,35 @@ export default {
           isOpen: false,
         },
       ],
-      Seomoontechs: [
+      smcTechs: [
         {
           id: 1,
-          title: "HTML5, CSS, JavaScript",
-          content: "기본 마크업 언어들 입니다. 이를 기반으로 디자인 및 동적효과를 주었습니다.",
+          title: "React, react-query",
+          content:
+            "UI 개발에 집중할 수 있습니다. 컴포넌트를 이용해서 재사용 가능하고, 논리적으로 파일을 나누어서 개발 진행을 할 수 있습니다. 또한 JSX 문법을 이용해서 조금 더 직관적으로 템플릿을 구성할 수 있어서 사용했습니다. react-query는 서버에서 데이터를 불러오는 과정에서, 로딩과 에러처리를 간편하게 할 수 있게 도와주는 라이브러리입니다. 또한 캐싱과 같은 기능도 제공하여, 서버에서 데이터를 불러오는 과정에서의 최적화를 도와줍니다.",
           isOpen: false,
         },
         {
           id: 2,
           title: "Node.js",
-          content: "서버를 구축하기 위해 사용했습니다. 자바스크립트로도 서버개발을 할 수 있는게 큰 장점입니다.",
+          content: "서버를 구축하기 위해 사용했습니다. 자바스크립트으로도 서버개발을 할 수 있는게 큰 장점입니다.",
           isOpen: false,
         },
         {
           id: 3,
-          title: "express.js",
+          title: "recoil",
           content:
-            "Node.js와 호환이 되며, 여러 미들웨어를 사용하기 위해 사용했습니다. 특히 사용한 주된 이유가 ejs를 사용하기 편하고 routing이 편해서입니다.",
+            "리액트의 상태관리 라이브러리입니다. 컴포넌트 간에 상태를 공유할 때, prop drilling을 방지하기 위해 사용했습니다. 또한 비동기 상태 관리도 지원하여, 서버에서 데이터를 불러오는 과정에서도 유용하게 사용했습니다.",
           isOpen: false,
         },
         {
           id: 4,
-          title: "mySQL",
-          content: "회원정보, 공지사항, 사진게시판의 데이터를 저장해두기 위해 사용했습니다.",
-          isOpen: false,
-        },
-        {
-          id: 5,
           title: "aws",
-          content:
-            "Elastic Beanstalk으로 만든 환경에 제 Github를 연결한 CodePipeline를 통해 배포를 하였습니다. 데이터는 RDS를 통해 데이터베이스를 만들고 거기에 mySQL의 정보를 불러와 연결했습니다.",
+          content: "EC2에 서버를 구축하고, S3에 정적 파일을 호스팅하여 배포했습니다.",
           isOpen: false,
         },
       ],
-      Porttechs: [
+      portTechs: [
         {
           id: 1,
           title: "HTML5, CSS, JavaScript",
@@ -386,41 +273,6 @@ export default {
           isOpen: false,
         },
       ],
-      Baseballtechs: [
-        {
-          id: 1,
-          title: "React",
-          content:
-            "UI 개발에 집중할 수 있습니다. 컴포넌트를 이용해서 재사용 가능하고, 논리적으로 파일을 나누어서 개발 진행을 할 수 있습니다. 또한 JSX 문법을 이용해서 조금 더 직관적으로 템플릿을 구성할 수 있어서 사용했습니다.",
-          isOpen: false,
-        },
-        {
-          id: 2,
-          title: "Node.js",
-          content: "react.js를 위해 사용했습니다.",
-          isOpen: false,
-        },
-        {
-          id: 3,
-          title: "lottie-react",
-          content: "로딩 이미지, 목숨 이미지를 불러오기 위해 사용했습니다.",
-          isOpen: false,
-        },
-        {
-          id: 4,
-          title: "Prettier",
-          content:
-            "프로젝트 코드의 통일화를 위해 사용했습니다. 따옴표와 쌍 따옴표의 통일, 한 줄에 몇 자 이상시 자동 줄바꿈 등 코드의 일관성을 지킬 수 있습니다.",
-          isOpen: false,
-        },
-        {
-          id: 5,
-          title: "Vercel",
-          content:
-            "깃허브 주소만 입력하면 바로 배포가 됩니다. CI/CD가 자동으로 구현되어 있어서 메인 브랜치에 merge, commit 됐을 때, 혹은 메인이 아닌 브랜치에서 merge, commit 시에 preview deployment를 제공하여 오류가 나는지 확인해줍니다. 또한 내부적으로 CI 파이프라인에서 에러가 나거나, 사용하지 않는 변수와 같은 실수들에 에러를 내뱉어 배포가 된 이후에 에러가 나는 것을 방지할 수 있습니다.",
-          isOpen: false,
-        },
-      ],
       animation,
       project1: {
         title: "세종 커피로봇 관제 대시보드",
@@ -449,52 +301,31 @@ export default {
         projectMockup: true,
       },
       project2: {
-        title: "아리랑시네센터",
-        projectIntro: "기존의 아리랑시네센터 사이트를 재해석하여 리뉴얼한 사이트입니다.",
-        projectMainFs: ["로그인, 회원가입", "네이버 영화정보 API를 이용한 영화검색", "공지사항 작성 및 수정과 삭제"],
+        title: "삼성서울병원 e-러닝 플랫폼",
+        projectIntro:
+          "병원 관계자를 대상으로 교육 콘텐츠를 제공하고 수강 현황을 관리할 수 있는 모바일 웹 서비스입니다.",
+        projectMainFs: [
+          "로그인, 회원가입",
+          "e-러닝 영상 업로드 및 수정삭제",
+          "회원 정보 관리",
+          "유저 영상 진도율 통계",
+        ],
         clarifications: [
-          "회원가입시 아이디 중복체크 기능을 넣었고 주소는 카카오에서 제공하는 API를 사용했고 가입된 회원정보는 mySQL 테이블에 저장됩니다.",
-          "로그인 시 네이버 로그인이 가능하게 구현했습니다.",
-          "로그인정보가 유지되게 세션을 사용했고 유효기간도 설정해두어 시간이 지나면 자동으로 로그아웃됩니다.",
-          "네이버 검색 API중 영화정보가 담겨있는 API를 가져와 검색기능을 만들었습니다.",
-          "mySQL에 담긴 데이터들과 함께 배포하기위해 aws를 이용했습니다.",
+          "e-러닝 영상 업로드 및 수정삭제는 AWS S3를 이용해서 구현했습니다. S3에 영상을 업로드하고, 업로드된 영상의 URL을 데이터베이스에 저장하는 방식으로 구현했습니다.",
+          "유저 영상 진도율 통계는 react-query를 이용해서 서버에서 데이터를 불러오는 과정에서, 로딩과 에러처리를 간편하게 할 수 있게 도와주는 라이브러리입니다. 또한 캐싱과 같은 기능도 제공하여, 서버에서 데이터를 불러오는 과정에서의 최적화를 도와줍니다.",
         ],
         developStorys: [
-          "교육과정 중 진행한 개인프로젝트 입니다. 평소 제작해보고 싶었던 사이트라서 제작하였습니다.",
-          "이 프로젝트를 진행하면서 전반적인 자바스크립트의 역량을 올릴 수 있었습니다.",
-          "API를 처음 알고, 처음 사용하게 된 프로젝트라서 JSON파일을 불러오는 과정에서 많은 고민을 했고, 이는 Node.js의 request 기능을 이용하여 원하는 정보들을 불러올 수 있었습니다.",
-          "네이버 로그인을 연동하는 과정에서 로그인이 유지되지 않는 문제에 봉착했었는데 세션에 대한 개념을 알게되어 express-session을 통해 API의 access_token을 불러와 세션에 저장하여 로그인기능을 마무리 지었습니다.",
+          "비교적 촉박한 일정이었지만, 팀원들과의 협업을 통해, 프론트엔드 개발자로서의 역량뿐만 아니라, 팀원들과의 소통과 협업 능력도 키울 수 있었습니다.",
+          "디자인과 기획안이 늦게 나와서, 기본 토대를 먼저 만들어놓고 디자인과 기획안이 나오는 대로, 그에 맞춰서 개발을 진행했습니다.",
+          "DB에 저장된 영상들의 URL을 불러와서, 영상이 업로드된 날짜와 함께 영상 리스트를 보여주는 기능을 구현하는 과정에서 백엔드 개발자와 굉장히 많은 소통이 필요했습니다.",
         ],
         improves: [
-          "회원가입에 아이디 중복체크를 구현하기 위해 회원가입 페이지에서 모든 회원들의 아이디 정보를 가져오게 됐는데 이는 보안상 매우매우 취약해질뿐만 아니라 회원정보의 데이터가 많아 질시 로딩이 느려질 수 있습니다.",
-          "로그인기능이 있지만 로그인이 된 상태에서만의 기능은 따로 없습니다.",
-          "localhost에선 문제가 없었지만 aws에서 배포한 사이트에서는 네이버 영화정보의 링크가 오류가 났습니다. 에러 코드는 500으로 네이버 개발자포럼에 문의를 한 상태입니다.",
+          "전체적으로 촉박한 일정이었음에도 불구하고, 너무 완벽하게 만들려고 했던 것 같습니다. 일정이 촉박한 만큼, 우선순위를 정해서, 꼭 필요한 기능부터 완성시키고, 그 이후에 추가적인 기능들을 완성시키는 방식으로 개발을 진행했어야 했던 것 같습니다.",
+          "이번 프로젝트를 통해서 실제 실무에선 이렇게 일정이 꼬여도 잘 대처하는 경험을 할 수 있었습니다.",
         ],
         projectMockup: true,
       },
       project3: {
-        title: "서문시장 야시장",
-        projectIntro: "기존의 서문시장 야시장 사이트를 재해석하여 리뉴얼한 사이트입니다.",
-        projectMainFs: ["로그인, 회원가입", "공지사항 작성 및 수정과 삭제"],
-        clarifications: [
-          "회원가입시 아이디 중복체크 기능을 넣었고 주소는 카카오에서 제공하는 API를 사용했고 가입된 회원정보는 mySQL 테이블에 저장됩니다.",
-          "mySQL에 담긴 데이터들과 함께 배포하기위해 aws를 이용했습니다.",
-        ],
-        developStorys: [
-          "교육과정 중 진행한 첫번째 개인프로젝트 입니다.",
-          "마크업 언어의 역량을 끌어 올리고자, 기능보단 디자인에 중점을 두고 제작했습니다.",
-          "사이트의 컨셉에 맞춰 야시장 느낌이 나게 연출했습니다.",
-          "swiper를 적극 활용하여 시각적인 효과를 주었습니다.",
-        ],
-        improves: [
-          "회원가입에 아이디 중복체크를 구현하기 위해 회원가입 페이지에서 모든 회원들의 아이디 정보를 가져오게 됐는데 이는 보안상 매우매우 취약해질뿐만 아니라 회원정보의 데이터가 많아 질시 로딩이 느려질 수 있습니다.",
-          "로그인기능이 있지만 로그인이 된 상태에서만의 기능은 따로 없습니다.",
-          "메인페이지의 fade효과는 일일히 scroll높이에 따라 줬다 보니 정확도가 많이 떨어집니다. 이는 IntersectionObserver 함수를 활용하여 정확도를 높일 수 있습니다.",
-          "메인페이지에 이미지가 많아, 사이트 로딩이 오래 걸리는 편입니다. 전반적인 리소스 절감 조치가 필요해 보입니다.",
-        ],
-        projectMockup: true,
-      },
-      project4: {
         title: "포트폴리오",
         projectIntro: "저 자신을 소개하는 포트폴리오 페이지입니다.",
         projectMainFs: ["깔끔한 디자인으로 저 자신을 소개", "Vue.js를 활용한 빠른 데이터 불러오기"],
@@ -510,58 +341,30 @@ export default {
         ],
         projectMockup: true,
       },
-      project5: {
-        title: "숫자 야구 게임",
-        projectIntro: "서로 다른 숫자 4자리를 맞추는 게임입니다.",
-        projectMainFs: [
-          "게임 시작 버튼을 누를시 랜덤으로 서로 다른 숫자 4자리를 생성",
-          "React.js를 활용한 새로고침 없이 데이터 초기화",
-        ],
-        clarifications: ["React의 Next.js를 만든 Vercel를 이용하여 배포하였습니다."],
-        developStorys: [
-          "React로 진행한 첫번째 프로젝트 입니다.",
-          "React를 사용해 개발하였으며 React에 대한 이해와 역량을 쌓을 수 있었습니다.",
-          "움직이는 로딩 이미지와 목숨 아이콘들은 'lottie-react'라는 라이브러리를 활용해 넣었습니다.",
-          "배포는 Vercel에서 진행했으며 Next.js를 만든 곳에서 만든 배포 시스템입니다. 깃허브 주소만 있다면 쉽게 배포할 수 있고 무료이기 때문에 선택하게 되었습니다.",
-        ],
-        improves: [
-          "디자인이 너무 단순해 부가적인 이미지들을 추후 추가할 예정입니다.",
-          "순위나 기록을 볼수 있는 페이지를 만들어 좀 더 게임 스럽게 할 필요가 보입니다.",
-        ],
-        projectMockup: true,
-      },
     };
   },
   methods: {
-    KBAtoggleAccordion(id) {
+    sejongToggleAccordion(id) {
       this.sejongTechs.forEach((techs) => {
         if (techs.id === id) {
           techs.isOpen = !techs.isOpen;
         }
       });
     },
-    SeomoontoggleAccordion(id) {
-      this.Seomoontechs.forEach((techs) => {
+    smcToggleAccordion(id) {
+      this.smcTechs.forEach((techs) => {
         if (techs.id === id) {
           techs.isOpen = !techs.isOpen;
         }
       });
     },
-    PorttoggleAccordion(id) {
-      this.Porttechs.forEach((techs) => {
+    portToggleAccordion(id) {
+      this.portTechs.forEach((techs) => {
         if (techs.id === id) {
           techs.isOpen = !techs.isOpen;
         }
       });
     },
-    BasetoggleAccordion(id) {
-      this.Baseballtechs.forEach((techs) => {
-        if (techs.id === id) {
-          techs.isOpen = !techs.isOpen;
-        }
-      });
-    },
-
     emitEvent(data) {
       this.$emit("openMockup", data);
     },
@@ -636,8 +439,8 @@ export default {
   background-image: url(../../public/img/sejong.png);
 }
 
-.arirnag {
-  background-image: url(../../public/img/arirang.PNG);
+.smc {
+  background-image: url(../../public/img/smc.png);
 }
 
 .seomoon {

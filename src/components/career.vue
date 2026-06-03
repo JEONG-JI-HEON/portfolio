@@ -4,7 +4,7 @@
       Career<span class="purplePoint">.</span>
       <div class="underLine"></div>
     </h1>
-    <article id="greenComputer" class="introduction observed">
+    <article id="in4in" class="introduction observed">
       <span class="intro-subtitle">경력</span>
       <h2>
         <a href="http://www.in4in.com/" class="titlehover" target="_blank"> 인포인 </a>
@@ -14,6 +14,14 @@
         <div class="explain">
           <div class="checkIcon"></div>
           <div class="explainTxt">3D 디지털 트윈·메타버스 기반 DX 솔루션 개발</div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">회사 자체 개발용 3D 엔진 개발 참여</div>
+        </div>
+        <div class="explain">
+          <div class="checkIcon"></div>
+          <div class="explainTxt">프로젝트 서버 운영 관리</div>
         </div>
       </article>
     </article>
