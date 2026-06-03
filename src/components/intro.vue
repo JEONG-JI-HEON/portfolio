@@ -3,20 +3,14 @@
     <div class="left-intro">
       <ul class="linkContainer">
         <li>
-          <a href="https://github.com/JEONG-JI-HEON" class="coloringText"
-            >GitHub<span class="purplePoint">.</span>
-          </a>
+          <a href="https://github.com/JEONG-JI-HEON" class="coloringText">GitHub<span class="purplePoint">.</span> </a>
         </li>
         <li>
-          <a href="https://discord.gg/SFwmc34bS2" class="coloringText"
-            >Discord<span class="purplePoint">.</span>
-          </a>
+          <a href="https://discord.gg/SFwmc34bS2" class="coloringText">Discord<span class="purplePoint">.</span> </a>
         </li>
       </ul>
       <div class="bottomContainer">
-        <a href="mailto:wlgjs0804@naver.com" class="myMail" target="_blank"
-          >wlgjs0804@naver.com</a
-        >
+        <a href="mailto:wlgjs0804@naver.com" class="myMail" target="_blank">wlgjs0804@naver.com</a>
         <p>Last update: 2023/02/05</p>
       </div>
     </div>
@@ -30,7 +24,7 @@
           <span>입니다.</span>
         </div>
         <div class="bottom-text">
-          <span>프론트엔드 개발자를 희망하고 있습니다.</span>
+          <span>개발자를 지향하고 있습니다.</span>
           <span>항상 만족하지 않고 끊임없이 변화를 추구하려 합니다.</span>
           <span>그렇기에 항상 배우는 자세를 잃지 않으려 합니다.</span>
         </div>

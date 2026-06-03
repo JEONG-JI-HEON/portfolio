@@ -1,10 +1,6 @@
 <template>
   <div id="scrollSpy" class="scrollSpy">
-    <div
-      v-for="scrollS in scrollSpy"
-      :key="scrollS"
-      v-bind:class="scrollS.title"
-    >
+    <div v-for="scrollS in scrollSpy" :key="scrollS" v-bind:class="scrollS.title">
       <p class="spy-title scrollNav" v-bind:data-target="scrollS.titleId">
         {{ scrollS.title }}
       </p>
@@ -119,8 +115,8 @@ export default {
   setup() {
     const scrollSpy = reactive([
       {
-        title: "Education",
-        titleId: "Edu",
+        title: "Career",
+        titleId: "Car",
         content1: "노원 그린컴퓨터아카데미",
         content1Id: "greenComputer",
       },

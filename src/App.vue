@@ -7,7 +7,7 @@
       <scrollSpy />
     </nav>
     <div id="contents-wrap">
-      <education />
+      <career />
       <profile />
       <project
         @openMockup="
@@ -24,21 +24,15 @@
       <contact />
     </div>
   </section>
-  <footer id="footer-wrap">
-    Copyright 2023. JeongJiHeon all rights reserved.
-  </footer>
-  <MockupWindow
-    v-if="showMockup"
-    @close="showMockup = false"
-    :data="mockupData"
-  />
+  <footer id="footer-wrap">Copyright 2023. JeongJiHeon all rights reserved.</footer>
+  <MockupWindow v-if="showMockup" @close="showMockup = false" :data="mockupData" />
   <button class="scrollTopBtn" @click="scrollToTop"></button>
 </template>
 
 <script>
 import Intro from "./components/intro.vue";
 import scrollSpy from "./components/scrollSpy.vue";
-import education from "./components/education.vue";
+import career from "./components/career.vue";
 import profile from "./components/profile.vue";
 import project from "./components/project.vue";
 import clones from "./components/clones.vue";
@@ -51,7 +45,7 @@ export default {
   components: {
     Intro,
     scrollSpy,
-    education,
+    career,
     profile,
     project,
     clones,
@@ -176,8 +170,7 @@ export default {
   transition: all 0.3s ease 0s;
   margin: 25px;
   z-index: 100;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px, rgb(0 0 0 / 15%) 0px 8px 30px,
-    rgb(255 255 255 / 20%) 0px 0px 0px 1px inset;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px, rgb(0 0 0 / 15%) 0px 8px 30px, rgb(255 255 255 / 20%) 0px 0px 0px 1px inset;
   cursor: pointer;
 }
 
