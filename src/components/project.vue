@@ -116,7 +116,7 @@
       </div>
       <span class="explainDate">2023년 1월 ~ 2023년 2월</span>
       <div class="projectImg-wrap">
-        <div class="projectImg portfolio" @click="emitEvent(project4)"></div>
+        <div class="projectImg portfolio" @click="emitEvent(project3)"></div>
       </div>
       <article class="introduction-projects">
         <div class="explain">
@@ -127,7 +127,7 @@
           <div class="checkIcon"></div>
           <div class="explainTxt">
             그 밖에 자세한 사항은 이미지
-            <span class="explainUnder titlehover" @click="emitEvent(project4)">클릭</span>하여 참조
+            <span class="explainUnder titlehover" @click="emitEvent(project3)">클릭</span>하여 참조
           </div>
         </div>
       </article>
